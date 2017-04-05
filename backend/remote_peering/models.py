@@ -46,6 +46,7 @@ class Ip(models.Model):
     latitude = models.FloatField()
 
     member = models.ForeignKey(Member)
+    locations = models.ManyToManyField(Location)
 
     created_at = models.DateTimeField(auto_now_add=True)
 
