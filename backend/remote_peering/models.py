@@ -35,8 +35,6 @@ class Ixp(models.Model):
     peeringdb_id = models.IntegerField(unique=True)
 
 
-
-
 class Ip(models.Model):
     address = models.CharField(max_length=100)
     version = models.IntegerField(default=6)
