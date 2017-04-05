@@ -1,19 +1,25 @@
 
 from rest_framework import viewsets, response
-
 from remote_peering import models
+from django.core.exceptions import *
+
 
 class AsnViewSet(viewsets.ViewSet):
     def list(self, request):
-        asns = models.As.objects.all()
-        result = [asn.number for asn in asns]
-
-        return response.Response({
-            "asns": result,
-        })
+        return response.Response(models.As.objects.all())
 
     def retrieve(self, request, pk=None):
-        return response.Response({
-            'pk': pk
-        })
+        try:
+            asn = models.As.objects.get(pk=pk)
+        except MultipleObjectsReturned:
+            return response.Response({
+                "status": 400,
+                "message": "Multiple records identified"
+            }, 400)
+        except ObjectDoesNotExist:
+            return response.Response({
+                "status": 404,
+                "message": "Object does not exist"
+            }, 404)
 
+        return response.Response({"status": 200, "data": asn})
