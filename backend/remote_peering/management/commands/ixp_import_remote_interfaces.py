@@ -57,10 +57,15 @@ class Command(BaseCommand):
 
     def _import_ixp(self, row):
         """Get or create the required IXP"""
-        location = self._import_location(row)
+        # Get IXP location
+        ixp_location, _ = models.Location.objects.get_or_create(
+            city=row['ixp_city'],
+            country=row['ixp_country'],
+            continent=row['ixp_continent'])
+
         ixp, _ = models.Ixp.objects.get_or_create(name=row['ixp'],
                                                   peeringdb_id=row['ixp_peeringdb_id'])
-        ixp.locations.add(location)
+        ixp.locations.add(ixp_location)
         return ixp
 
 
