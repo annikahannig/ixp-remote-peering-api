@@ -4,17 +4,19 @@ from rest_framework import serializers
 from remote_peering import models
 
 
-class AsSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = models.As
-        fields = ('number', 'created_at', 'member_set')
-
-
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Member
-        fields = ('asn', 'name')
-        depth = 2
+        fields = ('name')
+
+
+class AsSerializer(serializers.ModelSerializer):
+    member_set = MemberSerializer()
+
+    class Meta:
+        model = models.As
+        fields = ('number', 'created_at', 'member_set')
+        depth = 1
 
 
 class IxpSerializer(serializers.ModelSerializer):
