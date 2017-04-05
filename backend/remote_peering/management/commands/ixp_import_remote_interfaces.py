@@ -75,12 +75,28 @@ class Command(BaseCommand):
 
     def _import_ip(self, row, date):
         """Get or create ip record"""
+        member = _import_member(row)
+        ip, _ = models.Ip.objects.get_or_create(address=row['ip'],
+                                                version=4,
+                                                member=member,
+                                                longitude=row['lon'],
+                                                latitude=row['lat'],
+                                                created_at=date)
+        return ip
+
+
+    def _import_ip_metric(self, row, date):
+        """Extract ip metric from row"""
+        ip = self._import_ip(row, date)
+        metric = models.IpMetric.objects.create(ip=ip,
+                                                median_rtt=row['median_rtt'],
+                                                created_at=date)
+        return metric
 
 
     def _import_data(self, row, date):
         """Store row in database, create objects if required"""
         ixp = self._import_ixp(row)
-        ip = self._import_ip(row, date)
 
 
     def handle(self, *args, **options):
