@@ -10,7 +10,10 @@ class AsnViewSet(viewsets.ViewSet):
         entries = models.As.objects.all()
         entries = serializers.AsSerializer(entries, many=True)
 
-        return response.Response(entries.data)
+        return response.Response({
+            "status": 200,
+            "data": entries.data
+        })
 
     def retrieve(self, request, pk=None):
         try:
