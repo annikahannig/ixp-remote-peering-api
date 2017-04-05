@@ -57,12 +57,30 @@ class Command(BaseCommand):
 
     def _import_ixp(self, row):
         """Get or create the required IXP"""
-
-
-    def _import_data(self, row):
-        """Store row in database, create objects if required"""
         location = self._import_location(row)
-        ixp = self._import_ixp(row, location)
+        ixp, _ = models.Ixp.objects.get_or_create(name=row['ixp'],
+                                                  peeringdb_id=row['ixp_peeringdb_id'])
+        ixp.locations.add(location)
+        return ixp
+
+
+    def _import_member(self, row):
+        """Create member from row"""
+        ixp = self._import_ixp(row)
+        asn, _ = models.As.objects.get_or_create(number=int(row['asn']))
+        member, _ = models.Member.objects.get_or_create(asn=asn)
+        ixp.members.add(member)
+        return member
+
+
+    def _import_ip(self, row, date):
+        """Get or create ip record"""
+
+
+    def _import_data(self, row, date):
+        """Store row in database, create objects if required"""
+        ixp = self._import_ixp(row)
+        ip = self._import_ip(row, date)
 
 
     def handle(self, *args, **options):
@@ -81,4 +99,4 @@ class Command(BaseCommand):
                                                            date))
         data = self._read_interfaces_file(options['file'])
         for row in data:
-            self._import_data(row)
+            self._import_data(row, date)

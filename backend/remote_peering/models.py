@@ -6,8 +6,11 @@ from django.db import models
 
 class As(models.Model):
     number = models.IntegerField(unique=True)
-
     created_at = models.DateTimeField(auto_now_add=True)
+
+
+    def __unicode__(self):
+        return str(self.number)
 
 
 class Location(models.Model):
