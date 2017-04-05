@@ -16,5 +16,5 @@ echo "[i] Loading virtualenv (venv)"
 source $APPDIR/venv/bin/activate
 
 echo "[i] Starting API Server"
-cd $APPDIR && python backend/manage.py runserver
+cd $APPDIR && python backend/manage.py "$@" 
 
