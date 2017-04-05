@@ -4,6 +4,7 @@ from django.utils import timezone
 
 import json
 
+from remote_peering import models
 
 class Command(BaseCommand):
     """
@@ -46,6 +47,23 @@ class Command(BaseCommand):
                                  tzinfo=timezone.utc)
 
 
+    def _import_location(self, row):
+        """Get location data from row, create objects"""
+        location, _ = models.Location.objects.get_or_create(city=row['city'],
+                                                            country=row['country'],
+                                                            continent=row['continent'])
+        return location
+
+
+    def _import_ixp(self, row):
+        """Get or create the required IXP"""
+
+
+    def _import_data(self, row):
+        """Store row in database, create objects if required"""
+        location = self._import_location(row)
+        ixp = self._import_ixp(row, location)
+
 
     def handle(self, *args, **options):
         """Perform import of file"""
@@ -62,4 +80,5 @@ class Command(BaseCommand):
                                                            ixp,
                                                            date))
         data = self._read_interfaces_file(options['file'])
-
+        for row in data:
+            self._import_data(row)

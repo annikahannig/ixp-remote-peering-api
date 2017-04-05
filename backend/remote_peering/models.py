@@ -15,18 +15,8 @@ class Location(models.Model):
     country = models.CharField(max_length=80)
     city = models.CharField(max_length=80)
 
-    ixps = models.ManyToManyField('ixp')
-
     class Meta:
         unique_together = ('continent', 'country', 'city',)
-
-
-class Ixp(models.Model):
-    name = models.CharField(max_length=80)
-    members = models.ManyToManyField('member')
-    locations = models.ManyToManyField(Location)
-
-    peeringdb_id = models.IntegerField(unique=True)
 
 
 class Member(models.Model):
@@ -34,9 +24,17 @@ class Member(models.Model):
     asn = models.ForeignKey(As, null=False, blank=False)
     name = models.CharField(max_length=80, null=True, blank=True)
 
-    ixps = models.ManyToManyField(Ixp)
-
     created_at = models.DateTimeField(auto_now_add=True)
+
+
+class Ixp(models.Model):
+    name = models.CharField(max_length=80)
+    members = models.ManyToManyField(Member)
+    locations = models.ManyToManyField(Location)
+
+    peeringdb_id = models.IntegerField(unique=True)
+
+
 
 
 class Ip(models.Model):
