@@ -1,0 +1,583 @@
+1	Equinix Ashburn	ashburn,us,na
+2	Equinix Chicago	chicago,us,na|elk grove village,us,na
+3	Equinix Dallas	plano,us,na|dallas,us,na
+4	Equinix Los Angeles	el segundo,us,na|los angeles,us,na
+5	Equinix San Jose	san jose,us,na|santa clara,us,na|palo alto,us,na|sunnyvale,us,na
+7	Equinix Palo Alto	san francisco,us,na|palo alto,us,na|san jose,us,na|sunnyvale,us,na
+9	Equinix Atlanta	atlanta,us,na
+10	Equinix Vienna (VA)	vienna,us,na
+11	Equinix Seattle	seattle,us,na
+12	Equinix New York	newark,us,na|new york,us,na|secaucus ,us,na|secaucus,us,na|north bergen,us,na
+13	SIX Seattle	seattle,us,na|tukwila,us,na
+14	NYIIX	newark,us,na|new york,us,na|staten island,us,na
+15	MAE East	no. va & nyc,us,na
+16	MAE West	san jose & los angeles,us,na
+17	NOTA	miami,us,na
+18	LINX LON1	london,gb,eu|chessington,gb,eu|slough,gb,eu
+20	MAE Central	dallas & chicago,us,na
+21	IX Australia WA	malaga,au,oc|perth,au,oc|perth/wa,au,oc
+22	Digital Realty | Telx Atlanta	atlanta,us,na
+23	LAIIX	los angeles,us,na
+24	TorIX	toronto,ca,na
+25	MXP	boston,us,na
+26	AMS-IX	amsterdam,nl,eu
+29	Equinix Zurich	zurich,ch,eu
+30	JPIX	osaka,jp,as|tokyo,jp,as
+31	DE-CIX Frankfurt	frankfurt,de,eu
+32	SFIX	san francisco,us,na
+33	CIXP	geneva,ch,eu
+34	SFINX	paris,fr,eu
+35	MIX-IT	milano,it,eu|milan,it,eu
+40	PARIX	paris,fr,eu
+41	NYCX	new york,us,na
+42	HKIX	hong kong,hk,as
+43	TWIX	taipei,tw,as
+44	Manila IX	manila ,ph,as
+48	INEX LAN1	dublin,ie,eu
+50	VIX	wien,at,eu|vienna,at,eu
+52	KINX	seoul,kr,as
+53	LONAP	london,gb,eu|slough,gb,eu
+55	BiX	budapest,hu,eu
+58	FreeBIX	brussels,be,eu|belgium,be,eu
+59	BNIX	brussels,be,eu
+60	SwissIX	zurich,ch,eu|pratteln,ch,eu|rümlang,ch,eu|bern,ch,eu|basel,ch,eu
+62	CATNIX	barcelona,es,eu|l'hospitalet de llobregat,es,eu
+63	ESPANIX Lower LAN	madrid,es,eu|alcobendas,es,eu
+64	NL-ix	wien,at,eu|bucharest,ro,eu|sofia,bg,eu|stockholm,se,eu|zurich,ch,eu|arnhem,nl,eu|hamburg,de,eu|slough,gb,eu|paris,fr,eu|enschede,nl,eu|delft,nl,eu|bettembourg,lu,eu|brussels,be,eu|maastricht,nl,eu|rijen,nl,eu|amsterdam,nl,eu|sittard,nl,eu|copenhagen,dk,eu|berlin,de,eu|warsaw,pl,eu|frankfurt,de,eu|zwolle,nl,eu|hengelo,nl,eu|marseille,fr,eu|hilversum,nl,eu|steenbergen,nl,eu|london,gb,eu|antwerp,be,eu|zuidbroek,nl,eu|dronten,nl,eu|groningen,nl,eu|ede,nl,eu|alblasserdam,nl,eu|rotterdam,nl,eu|almere,nl,eu|duesseldorf,de,eu|waalwijk,nl,eu|munich,de,eu|eindhoven,nl,eu|spijkenisse,nl,eu|vitry-sur-seine,fr,eu|prague,cz,eu
+68	FNIX6	paris,fr,eu
+69	Lyonix	venissieux - lyon,fr,eu|lyon,fr,eu|limonest,fr,eu|villeurbanne,fr,eu
+70	Netnod Stockholm	stockholm,se,eu
+71	NIX.CZ	prague,cz,eu
+72	GigaPix	lisbon,pt,eu
+73	INXS by ecix	munich,de,eu
+74	DE-CIX Hamburg	hamburg,de,eu
+76	GN-IX	amsterdam,nl,eu|groningen,nl,eu
+77	LIX	luxemburg,lu,eu
+78	DIX	lyngby,dk,eu|skanderborg,dk,eu|copenhagen,dk,eu
+81	SD-NAP	san diego,us,na
+82	PacificWave	west coast,us,na
+83	NIX	oslo,no,eu
+84	SIX.SK	bratislava,sk,eu
+85	NDIX	ede,nl,eu|dronten,nl,eu|enschede / münster,nl,eu|heerlen,nl,eu
+87	BCIX	berlin,de,eu
+88	iAIX	hong kong,hk,as
+89	MadIX	madison,us,na
+91	ECIX-DUS	duesseldorf,de,eu
+92	DIX-IE	tokyo,jp,as
+93	SOX	singapore,sg,as
+94	Equinix Sydney	sydney,au,oc
+95	JPNAP Tokyo	tokyo,jp,as
+96	WIX	warsaw,pl,eu
+97	APE	auckland,nz,oc
+98	FICIX Helsinki	helsinki,fi,eu
+100	MSK-IX Moscow	moscow,ru,eu
+105	PIPE Networks Sydney	sydney, nsw,au,oc|sydney,au,oc
+107	MSK-IX Saint-Petersburg	saint-petersburg,ru,eu|st. petersburg,ru,eu
+108	NWIX Helena	helena,us,na
+109	NWIX Missoula	missoula,us,na
+110	PIPE Networks Brisbane	brisbane,au,oc
+111	PIPE Networks Melbourne	melbourne,au,oc
+112	PIPE Networks Adelaide	adelaide,au,oc
+113	PIPE Networks Canberra	canberra,au,oc
+114	PIPE Networks Hobart	hobart,au,oc
+115	TOP-IX	turin,it,eu|milano,it,eu|torino,it,eu|milan,it,eu
+119	NDB	são paulo,br,sa|barueri / são paulo,br,sa
+121	NaMeX	rome,it,eu
+123	KleyReX	frankfurt (eschborn),de,eu|frankfurt am main,de,eu|frankfurt,de,eu|offenbach am main,de,eu
+124	CIIX (formerly LAAP)	los angeles,us,na
+125	Equinix Hong Kong	hong kong,hk,as
+126	BBIX Tokyo	tokyo,jp,as|urasoe,jp,as
+127	OIX	oregon,us,na
+128	SOLIX	kista,se,eu|stockholm,se,eu
+129	JINX	johannesburg,za,af|centurion,za,af
+130	PHX-IX	phoenix,us,na
+135	N-IX	nuernberg,de,eu|nuremberg,de,eu|nürnberg,de,eu
+137	IX.PR	san juan,us,na
+141	TampaIX	tampa,us,na
+142	CoreSite - Any2 California	milpitas,us,na|san jose,us,na|santa clara,us,na|los angeles and silicon valley,us,na|los angeles,us,na
+145	JPNAP Osaka	osaka,jp,as|kita-ku,jp,as
+146	GIX Gothenburg	gothenburg,se,eu
+148	EuroGIX	strasbourg,fr,eu
+149	MIX Malta	msida,mt,eu
+151	BigApe	new york,us,na
+154	BAYANTEL	quezon city,ph,as
+155	SFMIX	san francisco,us,na|oakland,us,na|santa clara,us,na|mountain view,us,na|san jose,us,na|fremont,us,na
+158	Equinix Singapore	singapore,sg,as
+161	MerieX	london,gb,eu
+165	NWAX	hillsboro,us,na|beaverton,us,na|portland,us,na
+167	Equinix Tokyo	tokyo,jp,as
+170	OCIX Duesseldorf	duesseldorf,de,eu
+171	IX.br (PTT.br) São Paulo	sao paulo/sp,br,sa
+172	STHIX (Stockholm IX)	kista,se,eu|gothenburg,se,eu|stockholm,se,eu
+173	IX.br (PTT.br) Porto Alegre	porto alegre/rs,br,sa
+174	IX.br (PTT.br) Curitiba	curitiba/pr,br,sa
+175	IX.br (PTT.br) Florianópolis	florianopolis/sc,br,sa
+176	IX.br (PTT.br) Belo Horizonte	belo horizonte/mg,br,sa
+177	IX.br (PTT.br) Rio de Janeiro	rio de janeiro/rj,br,sa
+178	IX.br (PTT.br) Brasília	brasilia/df,br,sa
+180	NGIX West	moffett field, ca,us,na
+181	CABASE-BUE	buenos aires,ar,sa
+184	UA-IX	kiev,ua,eu
+187	TIX-LAN	tallinn,ee,eu
+189	HIX	honoloulu,us,na
+190	TLLIX	tallinn,ee,eu
+192	Netnod Gothenburg	gothenburg,se,eu
+193	Netnod COMIX	malmo / copenhagen,se,eu|copenhagen,dk,eu|malmö,se,eu
+194	Netnod Sundsvall	sundsvall,se,eu
+195	PIX Vancouver	vancouver,ca,na
+196	PIX Montreal	montreal,ca,na
+197	PIX Toronto	toronto,ca,na
+198	NIXI Delhi	delhi,in,as
+199	YRIX	billings, mt,us,na
+204	CoreSite - Any2 NorthEast	somerville,us,na|new york,us,na|dc, reston, boston, new york,us,na|washington,us,na|reston,us,na|secaucus,us,na
+205	CoreSite - Any2 Miami	miami,us,na
+208	ENLIX	manchester,gb,eu
+209	ECIX-BER	berlin,de,eu
+210	IIX	jakarta,id,as
+211	JPNAP Tokyo 2	tokyo,jp,as
+212	BW-IX Stuttgart / S-IX	stuttgart,de,eu
+215	BDIX	dhaka,bd,as
+216	ASIX6	taipei,tw,as
+217	TaipeiGigaPoP	taipei/taiwan,tw,as|taipei,tw,as
+221	OttIX	ottawa,ca,na
+223	MSK-IX Novosibirsk	novosibirsk,ru,eu
+224	NIXI Mumbai	mumbai,in,as
+225	NIX-CAT	bangkok,th,as
+226	CoreSite - Any2 Chicago	chicago,us,na
+228	RIX	reykjavik,is,eu
+230	POZIX	poznan,pl,eu|poznaå„,pl,eu|warsaw,pl,eu
+231	MalmIX Malmo / IXOR	malmö,se,eu
+234	NSPIXP3	osaka,jp,as
+235	NIXI Chennai	chennai,in,as
+236	KIXP	nairobi,ke,af
+237	CNC Beijing NAP	beijing,cn,as
+238	Ottawa GigaPOP	ottawa,ca,na
+239	ChIX	chicago,us,na
+240	MINAP Milan	milan,it,eu
+241	npIX PTS	kathmandu,np,as
+246	LGDACOM IX	seoul,kr,as
+248	DE-CIX Munich	munich,de,eu
+249	KCIX Kansas City	kansas city,us,na
+250	MyIX	cyberjaya,my,as|kuala lumpur,my,as
+252	NAP-CO	bogota,co,sa
+253	NAP.EC - UIO	quito/uio,ec,sa
+254	CoreSite - Any2 Denver 	denver,us,na
+255	Equinix Paris	paris,fr,eu
+256	Digital Realty | Telx Phoenix	phoenix,us,na
+257	Netnod Lulea	luleå,se,eu|lulea,se,eu
+258	Norrnod	umea,se,eu
+258	OCIX	
+262	SISPA	swaziland,sz,af
+264	PLIX	warsaw,pl,eu
+267	DRF IX	honolulu,us,na
+269	TransACT IX	canberra,au,oc
+270	InterLAN	bucharest,ro,eu|frankfurt,de,eu|bucharest, constanta, timisoara, craiova,ro,eu
+273	TIX	sesto fiorentino - florence,it,eu
+274	CAIX	cairo,eg,af
+275	BY-IX	minsk,by,eu
+281	MEIX	cairo,eg,af
+283	UppRIX	uppsala,se,eu
+287	Crimea-IX	simferopol,ua,eu
+288	ACTIX	canberra,au,oc|canberra, act,au,oc
+291	ECIX-HAM	hamburg,de,eu
+293	Od-IX	odessa,ua,eu
+296	NET-IX	moscow/russia,ru,eu
+297	LU-CIX	bissen-roost,lu,eu|luxembourg,lu,eu
+298	NIX2	oslo,no,eu
+299	NIX.SK	bratislava,sk,eu
+301	RoNIX	bucharest,ro,eu
+303	CIX	zagreb,hr,eu
+307	St-IX	stargard szczecinski,pl,eu
+311	VSIX	padova,it,eu
+313	R_iX	steenbergen,nl,eu|alblasserdam,nl,eu|rijen,nl,eu|rotterdam,nl,eu|delft,nl,eu|spijkenisse,nl,eu
+314	IX.br (PTT.br) Londrina	londrina/pr,br,sa
+316	ExWest	galway,ie,eu
+317	GIX	makati city,ph,as
+319	SIX SI	ljubljana,si,eu
+320	TomIX	constanta,ro,eu
+321	LINX LON2	london,gb,eu|chessington,gb,eu|slough,gb,eu
+322	Digital Realty | Telx Dallas	dallas,us,na
+325	Digital Realty | Telx New York	clifton,us,na|new york/new jersey,us,na|new york,us,na|weehawken,us,na
+326	B-IX	sofia,bg,eu
+327	DTEL-IX	kiev,ua,eu
+328	TREX	tampere,fi,eu
+331	BIX.BG	sofia,bg,eu
+332	CoreSite - Any2 New York	new york,us,na|secaucus,us,na
+333	CoreSite - Any2 Boston	boston,us,na|somerville,us,na
+334	KAZ-IX	almaty/kazakhstan,kz,as
+336	TOUIX	toulouse,fr,eu|labege innopole,fr,eu|balma,fr,eu
+338	CoreSite - Any2 Northern California	milpitas,us,na|san jose,us,na|santa clara,us,na|san jose, ca,us,na
+340	ULN-IX	ulyanovsk,ru,eu
+342	TRDIX	trondheim,no,eu
+344	CINX	cape town,za,af
+347	GR-IX	athens,gr,eu|metamorfosi,gr,eu|koropi,gr,eu
+348	WIX-NZ	wellington,nz,oc
+349	CHIX-NZ	christchurch,nz,oc
+350	MSK-IX Ekaterinburg	ekaterinburg,ru,eu
+355	QIX	saint-laurent,ca,na|montreal,ca,na
+357	SOAX	medford,us,na
+358	DATAIX	moscow,ru,eu|st. petersburg,ru,eu|ekaterinburg,ru,eu|st.petersburg,moscow,ekaterinburg,novosibirs,omsk,khabarovsk/ru.,ru,eu|kharkov,ua,eu|saint-petersburg,ru,eu|frankfurt,de,eu|st.petersburg,ru,eu|kiev,ua,eu
+359	France-IX Paris	magny-les-hameaux,fr,eu|paris,fr,eu|vitry-sur-seine,fr,eu|vitry sur seine,fr,eu
+360	VANTX	vancouver,ca,na
+361	TIX - Tanzania	dar es salaam,tz,af
+363	SUPRnet	saint george,us,na
+364	SMILE-LV	riga,lv,eu
+364	AMS-IX Caribbean	
+368	GigaPix OPorto	porto,pt,eu|oporto,pt,eu
+370	SainteTiX	rhone alpes,fr,eu
+371	SIX NO	stavanger/rogaland,no,eu
+372	Balcan-IX	bucharest,ro,eu|sofia,bg,eu|budapest,hu,eu|amsterdam,nl,eu|london,gb,eu|frankfurt,de,eu|kiev,ua,eu
+373	Equinix Toronto	toronto,ca,na
+375	OpenIXP / NiCE	indonesia,id,as
+377	AAIX	klagenfurt,at,eu
+378	MSK-IX Vladivostok	vladivostok,ru,eu
+379	MSK-IX Samara	samara,ru,eu
+380	MSK-IX Rostov-on-Don	rostov-on-don,ru,eu
+381	REUNIX	saint-denis, la reunion,re,af
+383	LIX-LV	riga,lv,eu
+387	INEX LAN2	dublin,ie,eu
+392	MD-IX	chisinau,md,eu
+393	IIX Israel	petah tikva,il,as
+398	MSK-IX Kazan	kazan,ru,eu
+400	LIPTAM	vilnius,lt,eu
+405	NAP Chile	santiago del chile,cl,sa
+410	FR-IX	paris,fr,eu
+415	IX.br (PTT.br) Campinas	campinas/sp,br,sa
+421	Angola-IXP / ANG-IX	luanda,ao,af
+422	UIXP	kampala,ug,af
+424	SOX d.o.o. Serbia	wien,at,eu|belgrade/serbia,rs,eu|sofia,bg,eu
+427	SARATOV-IX	saratov,ru,eu
+428	NASA-AIX	mountain view, ca,us,na|mountain view,us,na
+429	SGIX	singapore,sg,as
+430	GraX	graz,at,eu
+433	PHILAIX	philadelphia,us,na
+435	IX Leeds	leeds,gb,eu|leeds / western yorkshire,gb,eu
+446	MICE	belle plaine,us,na|minneapolis, mn,us,na|minneapolis,us,na
+452	BIX Jakarta	jakarta,id,as
+453	FIXO	oslo,no,eu
+457	COPHIX	copenhagen,dk,eu
+463	GU-IX	piti,gu,oc|guam,gu,oc|dededo,gu,oc|susupe,mp,oc
+469	MCIX - Matrix Networks	jakarta,id,as
+474	EPIX.Warszawa-KIX	warszawa,pl,eu|warsaw,pl,eu
+475	Lviv-IX	lviv,ua,eu
+476	AZIX	phoenix,us,na
+477	CBIX	brno,cz,eu
+481	Thinx	warsaw,pl,eu
+482	TPIX	kielce,pl,eu|kraków,pl,eu|warsaw,pl,eu|olsztyn,pl,eu|katowice,pl,eu|bydgoszcz,pl,eu|lublin,pl,eu|poznań,pl,eu|warszawa,pl,eu|szczecin,pl,eu|białystok,pl,eu|wrocław,pl,eu|rzeszów,pl,eu|gdańsk,pl,eu|łódź,pl,eu
+487	CyIX	nicosia / cyprus,cy,as
+488	IXPN Lagos	lagos,ng,af
+491	EPIX.Katowice	katowice,pl,eu|katowice/silesia,pl,eu
+492	FICIX Oulu	oulu,fi,eu
+496	BNIIX	buffalo,us,na
+498	GIX Gdansk	gdansk,pl,eu
+499	MKE-IX	milwaukee,us,na
+506	GTIIX	toronto,ca,na
+512	PIRIX	saint-petersburg,ru,eu|st. petersburg,ru,eu|st.petersburg,ru,eu
+513	IX Australia VIC	melbourne,au,oc|melbourne/victoria,au,oc
+514	COIX	bend oregon,us,na
+524	CePIX.pl	mogilno,pl,eu
+526	LIXP	maseru,ls,af
+528	MOZIX	maputo,mz,af
+529	KRS-IX	krasnoyarsk,ru,eu
+536	Content-IX	copenhagen,dk,eu
+538	RTIX	tallinn,ee,eu
+542	Litix	vilnius,lt,eu
+543	Rheintal IX	eschen,li,eu|li / ch / at,li,eu|feldkirch,at,eu
+556	IX.br (PTT.br) Salvador	salvador/ba,br,sa
+558	IX.br (PTT.br) Caxias do Sul	caxias do sul/rs,br,sa
+559	SIX.SK Košice	košice,sk,eu|koå¡ice,sk,eu
+563	JXIX	jacksonville,us,na
+564	JPIX OSAKA	osaka,jp,as
+565	Boston Internet Exchange	lowell,us,na|boston,us,na|boston, massachusetts,us,na
+566	PNIX	palmerston north,nz,oc
+573	HIX Haiti	port-au-prince,ht,na
+575	IX.br (PTT.br) Goiânia	goiania/go,br,sa
+576	IX Australia QLD	brisbane/queensland,au,oc|brisbane,au,oc
+577	AMS-IX Hong Kong	quarry bay,hk,as|hong kong,hk,as
+580	MSK-IX Stavropol	stavropol,ru,eu
+582	BIX Bergen	bergen,no,eu
+583	IXManchester	manchester,gb,eu
+587	UAE-IX	dubai,ae,as
+592	NAPAfrica IX Johannesburg	johannesburg,za,af
+593	Equinix Miami	boca raton,us,na|miami,us,na
+597	NAPAfrica IX Cape Town	cape town,za,af
+598	NIXI Hyderabad	hyderabad,in,as
+602	Echigo-IX	niigata,jp,as
+603	IX.br (PTT.br) Campina Grande	campina grande/pb,br,sa
+606	C2IX	jakarta ,id,as|jakarta,id,as
+607	MIX NDC	ulaanbaatar,mn,as
+610	DINX	durban,za,af
+615	LuIXP	lusaka,zm,af
+624	TP-IX	duluth,us,na
+626	IIX JI	surabaya,id,as
+627	SNAP	atlanta,us,na
+628	RDC-IX Kinshasa	kinshasa,cd,af
+631	PacificIX	sydney,au,oc
+633	Sea-IX	krasnodar,ru,eu
+635	OMSK-IX	omsk,ru,eu
+638	IX.br (PTT.br) São José dos Campos	sao jose dos campos/sp,br,sa
+639	YYCIX	calgary,ca,na
+640	GCIIX	chicago,us,na
+655	GigaNET	kiev,ua,eu
+662	Phoenix IX	tempe,us,na|phoenix,us,na
+670	VUIX	port vila,vu,oc
+672	CyrusOne IX Dallas	dallas,us,na
+673	CyrusOne IX Houston	houston,us,na
+674	CyrusOne IX Austin	austin,us,na
+675	CyrusOne IX San Antonio	san antonio,us,na
+676	ECIX-FRA	frankfurt,de,eu
+683	YAR-IX	yaroslavl,ru,eu
+691	IX Australia SA	mile end south,au,oc|adelaide,au,oc|adelaide/sa,au,oc
+694	GIXA	accra,gh,af
+699	NetIX	wien,at,eu|madrid,es,eu|kiev,ua,eu|bucharest,ro,eu|sofia,bg,eu|stockholm,se,eu|warsaw,pl,eu|london,gb,eu|amsterdam,nl,eu|milan,it,eu|paris,fr,eu|istanbul,tr,eu|milano,it,eu|frankfurt,de,eu|koropi,gr,eu|prague,cz,eu
+703	MBIX	winnipeg, manitoba,ca,na|winnipeg,ca,na
+705	IX.br (PTT.br) Recife	recife/pe,br,sa
+706	IX.br (PTT.br) Vitória	vitoria/es,br,sa
+707	IX.br (PTT.br) Manaus	manaus/am,br,sa
+708	IX.br (PTT.br) Natal	natal/rn,br,sa
+709	IX.br (PTT.br) São José do Rio Preto	sao jose do rio preto/sp,br,sa
+710	IX.br (PTT.br) Fortaleza	fortaleza/ce,br,sa
+711	IX.br (PTT.br) Belém	belem/pa,br,sa
+713	Peering.cz	wien,at,eu|bratislava,sk,eu|prague, bratislava,cz,eu|frankfurt,de,eu|prague,cz,eu
+716	IX Australia NSW	sydney,au,oc|sydney/nsw,au,oc
+727	MIX-BT	blantyre,mw,af|blantyre 3,mw,af
+745	IXScotland	scotland,gb,eu|edinburgh,gb,eu
+760	CyrusOne IX Phoenix	phoenix,us,na
+762	DO-IX	dortmund,de,eu
+766	DN-IX	donetsk,ua,eu
+776	WPGIX	winnipeg,ca,na
+777	LINX NoVA	reston,us,na|ashland,us,na|ashburn,us,na|manassas,us,na|northern virginia,us,na
+778	CIX KR	krakow,pl,eu
+779	MegaIX Melbourne	melbourne,au,oc
+780	MegaIX Sydney	melbourne,au,oc|sydney,au,oc|brisbane,au,oc
+781	MegaIX Brisbane	brisbane,au,oc
+786	BBIX Osaka	osaka,jp,as
+787	BBIX Fukuoka	fukuoka,jp,as
+788	BBIX Nagoya	nagoya,jp,as
+790	IX.br (PTT.br) Lajeado	lajeado/rs,br,sa
+791	BFIX	wy/mt/co,us,na
+796	BREM-IX	bremen,de,eu
+804	DE-CIX New York	newark,us,na|new york,us,na|secaucus,us,na|new york / new jersey,us,na
+806	AMS-IX NY	piscataway,us,na|new york,us,na
+809	OmahaIX	omaha,us,na
+810	CIVIX	abidjan,ci,af
+815	NNOV-IX	nizhny novgorod,ru,eu
+818	IX.br (PTT.br) Maringá	maringá/pr,br,sa
+819	IX.br (PTT.br) São Carlos	são carlos/sp,br,sa
+822	Sibir-IX	krasnoyarsk,ru,eu
+823	TPIX-TW	taipei/taiwan,tw,as|taipei,tw,as
+828	RZ-IX	rzeszow,pl,eu
+829	SLIX	west valley city,us,na|utah,us,na|salt lake city,us,na
+832	Mumbai Internet Exchange	mumbai,in,as
+833	TPAIX	tampa,us,na
+842	IXP-ML	la paz,bo,sa
+851	ArmIX	yerevan,am,as
+854	HTN-IX	phnom penh,kh,as
+856	VRZ-IX	voronezh,ru,eu
+859	IX.br (PTT.br) Cuiabá	cuiaba/mt,br,sa
+863	VANIX	vancouver,ca,na
+864	BR-IX	brno,cz,eu
+866	SH-IX	fujairah,ae,as|fujairah, uae,ae,as
+867	OCIX Frankfurt	frankfurt,de,eu
+869	OhioIX	ohio,us,na
+876	RED-IX	krasnoyarsk,ru,eu
+877	PHIX	metro manila,ph,as
+878	PHIX-AP	metro manila,ph,as
+880	France-IX Marseille	marseille,fr,eu
+881	Lillix	lille/north of france,fr,eu
+896	IXP Mexicano	mexico city,mx,na
+904	CABASE-LPL	la plata,ar,sa|buenos aires,ar,sa
+906	HFXIX	halifax,ca,na
+909	BBIX Singapore	singapore,sg,as
+911	CABASE-POS	buenos aires,ar,sa|posadas,ar,sa
+912	CAMIX	yaounde,cm,af
+916	CitraIX	yogyakarta,id,as
+922	WHK-IX	windhoek,na,af
+930	CABASE-NQN	neuquén,ar,sa|buenos aires,ar,sa
+935	AMS-IX BA	san francisco,us,na|san francisco, san jose,us,na|san jose,us,na|fremont,us,na
+938	TahoeIX	reno,us,na|northern nevada,us,na
+940	TTIX	princes town,tt,na|barataria,tt,na
+944	AMS-IX Chicago	chicago,us,na|elk grove village,us,na
+945	CABASE-ROS	buenos aires,ar,sa|rosario,ar,sa
+948	Equinix Osaka	osaka,jp,as
+954	FL-IX	boca raton,us,na|ft. lauderdale,us,na|miami,us,na
+957	MiamiIX	miami,us,na|miami, florida,us,na
+965	MegaIX Singapore	jurong east,sg,as|singapore,sg,as
+967	DjIX	djibouti,dj,af
+969	NAPAfrica IX Durban	durban,za,af
+971	VIX.VU	port vila,vu,oc
+976	IX Australia ACT	canberra/act,au,oc
+977	AKL-IX	auckland,nz,oc
+983	UNY-IX	yogyakarta,id,as
+984	MegaIX Auckland	auckland,nz,oc
+985	IX Brighton	brighton,gb,eu
+986	MidWest-IX - Indy	indianapolis,us,na|columbus,us,na|indianaplois,us,na|chicago,us,na|indianapolis, indiana,us,na
+993	PIX Palestine	ramallah,ps,as
+1002	RVA-IX	ashland,us,na
+1006	DET-IX	southfield,us,na|detroit,us,na
+1007	angonix	luanda,ao,af
+1009	Tirol-IX	hall,at,eu|innsbruck/tirol,at,eu
+1013	NOVO NIX	dhaka,bd,as
+1016	IXCardiff	cardiff,gb,eu
+1017	BENIN-IX	cotonou,bj,af
+1019	AuvernIX	clermont-ferrand,fr,eu
+1023	CRIX	san jose,cr,na|san josé,cr,na
+1023	KOSIX	
+1025	BKNIX	bangkok,th,as
+1026	Equinix Melbourne	melbourne,au,oc
+1028	Nap Peru	lima,pe,sa
+1032	RINEX	kigali,rw,af
+1037	MegaIX Hong Kong	hong kong,hk,as
+1038	NashIX	nashville,us,na
+1040	NormandIX	normandy ,fr,eu
+1042	NAP.EC - GYE	guayaquil/gye,ec,sa
+1046	Congo Internet eXchange	brazzaville,cg,af
+1051	PacIX-HK	hongkong,hk,as
+1052	SIXP	serekunda,gm,af
+1054	TransIX Network	jakarta,id,as|singapore,sg,as
+1056	OM-NIX	sofia,bg,eu
+1058	LiveAir Tulsa IX	tulsa,us,na
+1061	PRBI-IX	san juan, puerto rico,us,na
+1062	NETWORK ACCESS POINT DEL CARIBE - DR	santo domingo / latin america,do,na
+1066	CABASE-BHB	bahía blanca,ar,sa|buenos aires,ar,sa
+1067	CABASE-COR	buenos aires,ar,sa|córdoba,ar,sa
+1068	CABASE-DLC	de la costa,ar,sa|buenos aires,ar,sa
+1069	CABASE-MDQ	mar del plata,ar,sa|buenos aires,ar,sa
+1070	CABASE-MZA	mendoza,ar,sa|buenos aires,ar,sa
+1071	CABASE-PMY	puerto madryn,ar,sa|buenos aires,ar,sa
+1072	CABASE-SFE	buenos aires,ar,sa|santa fe,ar,sa
+1073	SAIX	salzburg,at,eu
+1074	SIXP GAMBIA	serekunda,the gambia,gm,af|serrekunda,gm,af
+1086	MASS-IX	billerica,us,na|somerville,us,na|lowell,us,na|new york,us,na|wakefield,us,na|chelmsford,us,na|boston,us,na|cambridge,us,na|providence,us,na|needham,us,na
+1088	Global-IX	st. petersburg,ru,eu|saint-petersburg,ru,eu|saint petersburg,ru,eu|stockholm,se,eu|moscow,ru,eu
+1089	T-CIX	bulgaria / europe,bg,eu|sofia,bg,eu
+1091	ALB-IX	tirana,al,eu
+1094	GE-CIX	zurich,ch,eu|amsterdam,nl,eu|dronten,nl,eu|attinghausen,ch,eu|frankfurt,de,eu|moscow,ru,eu
+1095	IIX-RI	pekanbaru / riau,id,as
+1098	Indiana IX	south bend,us,na
+1105	TunIXP	tunis,tn,af
+1117	CyrusOne IX Sterling	sterling virginia,us,na
+1123	IXP-HN	tegucigalpa,hn,na
+1127	MARTINIX	fort-de-france,mq,na
+1131	DE-CIX Palermo	palermo,it,eu
+1133	BurundiX	burundi,bi,af
+1134	Guyanix	cayenne,gf,sa
+1137	TSK IX	tomsk,ru,eu
+1138	Cymru UTRS	lake mary, fl,us,na
+1139	Cymru BOGONS	lake mary, fl,us,na
+1142	CyrusOne IX Chicago	chicago,us,na|lombard,us,na
+1146	ESPANIX Upper LAN	madrid,es,eu|alcobendas,es,eu
+1149	DE-CIX Marseille	marseille,fr,eu
+1150	DE-CIX Istanbul	istanbul,tr,eu
+1151	CentralIX	bremen/germany,de,eu
+1154	SFO-IX	barnaul,ru,eu
+1156	United Peering - UP-IXP	wuppertal,de,eu
+1160	NIXVAL-ix	valencia,es,eu
+1168	Kherson Traffic Exchange	kherson,ua,eu
+1169	YEGIX	edmonton,ca,na
+1171	KIVIX	chisinau; bucharest,md,eu|bucharest,ro,eu|chisinau,md,eu
+1172	CHN-IX Beijing	beijing,cn,as
+1174	MegaIX Seattle	seatlle,us,na|seattle,us,na
+1175	MegaIX Los Angeles	los angeles,us,na
+1176	MegaIX Bay Area	san jose,us,na|santa clara,us,na
+1177	MegaIX Chicago	chicago,us,na
+1178	MegaIX Ashburn	reston,us,na|ashburn,us,na
+1179	MegaIX New York	newark,us,na|new york,us,na
+1180	MegaIX Dallas	carrollton,us,na|dallas,us,na|lewisville,us,na
+1183	6NGIX	seoul,kr,as
+1187	SYMC-IX Bangkok	bangkok,th,as
+1188	TC-IX	phnom penh,kh,as
+1191	SerinIX IX	kiev,ua,eu
+1201	AIXP	arusha,tz,af
+1207	IX-Denver	denver,us,na
+1209	CNX	phnom penh,kh,as
+1210	M-IX	simferopol,ru,eu
+1212	MGMix Montgomery	montgomery,us,na
+1214	DE-CIX Dusseldorf	duesseldorf,de,eu|düsseldorf,de,eu
+1228	CDIX	indonesia,id,as
+1229	CODIX	saint-petersburg,ru,eu|st. petersburg,ru,eu
+1235	MegaIX Perth	malaga,au,oc|perth,au,oc
+1236	MI-X	troy, michigan,us,na
+1242	W-IX	saint-petersburg,ru,eu|moscow,ru,eu
+1249	DE-CIX Dallas	dallas,us,na
+1257	WBX MMR 2.0™	seattle,us,na
+1259	Peering Exchange	philadelphia,us,na
+1262	INEX Cork	cork,ie,eu
+1276	IX.br (PTT.br) Foz do Iguaçu	foz do iguaçu/pr,br,sa
+1277	DE-CIX Madrid	madrid,es,eu
+1284	CHN-IX Guangzhou	guangzhou,cn,as
+1285	SIX Seattle (Jumbo)	seattle,us,na|tukwila,us,na
+1302	IX Liverpool	liverpool,gb,eu
+1303	China Internet Exchange	beijing,cn,as
+1304	Doha-IX	doha,qa,as
+1307	MegaIX Toronto	toronto,ca,na
+1308	DF-IX	zoetermeer,nl,eu|spijkenisse,nl,eu|the hague,nl,eu
+1312	OuestIX	rezé,fr,eu|saint-herblain,fr,eu|carquefou,fr,eu|nantes,fr,eu
+1314	BFiX Burkina Faso	ouagadougou,bf,af
+1317	NIXI Kolkata	kolkata,in,as
+1319	EURASIA:peering	moscow,ru,eu
+1320	Hopus	paris, lyon, geneva,fr,eu|venissieux - lyon,fr,eu|geneva,ch,eu|vitry sur seine,fr,eu|paris,fr,eu|vitry-sur-seine,fr,eu
+1323	Extreme IX Delhi	new delhi,in,as|mumbai,in,as|noida ,in,as|delhi,in,as
+1329	Community-IX	berlin,de,eu
+1332	FICIX Espoo	espoo,fi,eu
+1335	MGIX	antananarivo,mg,af
+1341	JetPeer IX	mumbai,in,as
+1354	Beirut IX	beirut,lb,as
+1375	CHN-IX Shanghai	shanghai,cn,as
+1387	DataLine-IX	moscow,ru,eu
+1409	BINX	gaborone,bw,af
+1411	BIX Bahrain	manama ,bh,as
+1412	BOR-IX	borås,se,eu
+1416	CASIX	casablanca,ma,af
+1418	TIX Tromsø	tromsø,no,eu
+1419	SIX Stavanger	stavanger,no,eu
+1420	TRDIX  Trondheim	trondheim,no,eu
+1421	BW-IX Karlsruhe	karlsruhe,de,eu
+1428	GrenoblIX	grenoble,fr,eu
+1441	Liberia IX	monrovia,lr,af
+1449	BBIX Hong Kong	hong kong,hk,as
+1464	Equinix Helsinki	espoo,fi,eu|helsinki,fi,eu
+1468	Asia Smart IX [BBIX Asia]	hong kong,hk,as|tokyo,jp,as|singapore,sg,as
+1469	UNIFI-IX	london,gb,eu|dublin,ie,eu|slough,gb,eu|manchester,gb,eu
+1480	CABASE-JUN	junin,ar,sa|buenos aires,ar,sa
+1481	CABASE-SLU	san luis,ar,sa|buenos aires,ar,sa
+1482	CABASE-PER	buenos aires,ar,sa|pergamino,ar,sa
+1483	CABASE-TUC	tucuman,ar,sa|buenos aires,ar,sa
+1484	CABASE-NGB	buenos aires,ar,sa|pilar,ar,sa
+1485	CABASE-SZP	saenz peña, chaco,ar,sa|buenos aires,ar,sa
+1486	CABASE-SLT	salta,ar,sa|buenos aires,ar,sa
+1487	CABASE-BRC	bariloche,ar,sa|buenos aires,ar,sa
+1488	Vegas-IX	las vegas,us,na
+1489	Aloha-IX	kapolei,us,na|honolulu,us,na
+1490	Richmond-IX	richmond,us,na|sandston,us,na
+1504	TEHRAN-IX	tehran,ir,as
+1508	MIXP	ebene,mu,af
+1514	PIT Chile	santiago de chile,cl,sa|santiago,cl,sa
+1516	IX.LODZ.PL - Łódzki Węzeł Telekomunikacyjny	łódź,pl,eu
+1519	MidWest-IX - St. Louis	st. louis,us,na
+1522	IX.py	san lorenzo,py,sa
+1533	inet2	mowsow, st.petersburg, novosibirsk, ekaterinburg etc,ru,eu
+1539	PIT Telefonica	santiago,cl,sa
+1541	TESPOK-KIXP-MBA	mombasa,ke,af
+1542	TESPOK-KIXP-NBO	nairobi,ke,af
+1561	PhOpenIX-Manila	manila,ph,as
+1562	PhOpenIX-Cebu	cebu,ph,as
+1563	PhOpenIX-Davao	davao,ph,as
+1574	TIX Tanzania - Mwanza IXP	mwanza,tz,af
+1577	IIFON IX Kolkata	kolkata,in,as
+1606	Delhi Internet Exchange ( MCH Delhi)	new delhi,in,as
+1607	Hyderabad Internet Exchange (MCH Hyderabad )	hyderabad,in,as
+1622	TWNAP	taipei,tw,as
+1623	AMS-IX India	mumbai,in,as|navi mumbai,in,as
+1627	Extreme IX Mumbai	mumbai,in,as
+1628	MegaIX Las Vegas	las vegas,us,na
+1634	SCL-IX Chile	santiago,cl,sa
+1658	npIX JWL	lalitpur,np,as
+1663	RIX (RYUKYUIX)	urasoe and naha,jp,as|urasoe,jp,as
+1668	CIX-ATL	atlanta,us,na
+1669	BAIKAL-IX	irkutsk,ru,eu
+1670	BreizhIX	rennes,fr,eu
+1679	NNENIX	portland,us,na
+1684	IX.br (PTT.br) Aracaju	aracaju/se,br,sa
+1689	NIXI Bangalore	bangalore,in,as
+1690	NIXI Ahmedabad	ahmedabad,in,as

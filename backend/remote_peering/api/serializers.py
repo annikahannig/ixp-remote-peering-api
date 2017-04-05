@@ -32,3 +32,8 @@ class LocationSerializer(serializers.ModelSerializer):
         fields = ('continent', 'country', 'city')
 
 
+class IpMetricSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.IpMetric
+        fields = ('address', 'version', 'longitude', 'latitude', 'member',
+                  'locations', 'created_at')
