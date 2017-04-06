@@ -64,7 +64,8 @@ class IpSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Ip
         fields = ('id', 'address', 'version', 'longitude', 'latitude',
-                  'member', 'locations', 'created_at')
+                  'member', 'locations', 'num_paths', 'num_peerings',
+                  'created_at')
         depth = 2
 
 
