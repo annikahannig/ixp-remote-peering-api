@@ -1,37 +1,52 @@
 
 from rest_framework import viewsets, response
-from remote_peering import models
+
+from remote_peering import models, utils
 from remote_peering.api import serializers
+
 from django.db.models import Q
+
 import operator
 
 
+
 class IpMetricsViewSet(viewsets.ViewSet):
+    """
+    Retrieve and filter IP metrics.
+
+    ### QueryParameters:
+    * `?date=<date>`
+    * `?ip=<ip address>[,<ip address>...]`
+    * `?asn=<as number>[,<as number>...]`
+    * `?median_rtt_<lte|gte>=<float>`
+    """
+
+
     def list(self, request):
         created_at = request.query_params.get('date')
-        ip_v4 = request.query_params.get('ip_v4')
-        asn = request.query_params.get('asn')
+        ip_address = utils.params_list(request, 'ip')
+        asn = utils.params_list(request,'asn')
         median_rtt_lte = request.query_params.get('median_rtt_lte')
         median_rtt_gte = request.query_params.get('median_rtt_gte')
 
         query_list = []
 
-        if created_at is not None:
+        if created_at:
             query_list.append(Q(created_at=created_at))
 
-        if ip_v4 is not None:
-            query_list.append(Q(ip__address=ip_v4))
-            query_list.append(Q(ip__version=4))
+        if ip_address:
+            query_list.append(Q(ip__address__in=ip_address))
 
-        if asn is not None:
-            query_list.append(Q(ip__member__asn__number=asn))
+        if asn:
+            query_list.append(Q(ip__member__asn__number__in=asn))
 
-        if median_rtt_gte is not None:
+        if median_rtt_gte:
             query_list.append(Q(median_rtt__gte=median_rtt_gte))
 
-        if median_rtt_lte is not None:
+        if median_rtt_lte:
             query_list.append(Q(median_rtt__lte=median_rtt_lte))
 
+        # Done. Combine all query parameters
         if query_list:
             entries = models.IpMetric.objects\
                 .filter(reduce(operator.and_, query_list))
