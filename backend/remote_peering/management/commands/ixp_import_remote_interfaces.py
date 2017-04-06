@@ -93,9 +93,9 @@ class Command(BaseCommand):
     def _import_ip_metric(self, row, date):
         """Extract ip metric from row"""
         ip = self._import_ip(row, date)
-        metric = models.IpMetric.objects.create(ip=ip,
-                                                median_rtt=row['median_rtt'],
-                                                created_at=date)
+        metric, _ = models.IpMetric.objects.get_or_create(ip=ip,
+                                                          median_rtt=row['median_rtt'],
+                                                          created_at=date)
         return metric
 
 
