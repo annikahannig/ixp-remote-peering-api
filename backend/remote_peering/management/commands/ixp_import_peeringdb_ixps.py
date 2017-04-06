@@ -26,6 +26,13 @@ class Command(BaseCommand):
         }
         return location
 
+    def _parse_locations(self, attribute):
+        """Extract locations from row"""
+        locations_data = attribute.split('|')
+        locations = [self._parse_location(l) for l in locations_data]
+        return locations
+
+
     def _parse_row(self, row):
         """Attributes are tabseparated;
            PeeringDB ID \t IXP \t Location
@@ -37,7 +44,7 @@ class Command(BaseCommand):
                 "peeringdb_id": int(attributes[0]),
                 "name": attributes[1],
             },
-            "location": self._parse_location(attributes[2]),
+            "locations": self._parse_locations(attributes[2]),
         }
         return result
 
@@ -49,21 +56,25 @@ class Command(BaseCommand):
             return data
 
 
-    def _import_location(self, row):
+    def _import_location(self, location_data):
         """Create location"""
-        if row['location'] == None:
+        if not location_data:
             return None
 
-        location, _ = models.Location.objects.get_or_create(**row['location'])
+        location, _ = models.Location.objects.get_or_create(**location_data)
         return location
 
 
     def _import_ixp(self, row):
         """Create IXP and include location"""
-        location = self._import_location(row)
         ixp, _ = models.Ixp.objects.get_or_create(**row['ixp'])
-        if location:
-            ixp.locations.add(location)
+
+        # Assign locations
+        for loc in row['locations']:
+            location = self._import_location(loc)
+            if location:
+                ixp.locations.add(location)
+
         return ixp
 
 
