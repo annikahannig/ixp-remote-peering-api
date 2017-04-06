@@ -11,8 +11,8 @@ class IpMetricsViewSet(viewsets.ViewSet):
         created_at = request.query_params.get('date')
         ip_v4 = request.query_params.get('ip_v4')
         asn = request.query_params.get('asn')
-        median_rtt_lt = request.query_params.get('median_rtt_lt')
-        median_rtt_gt = request.query_params.get('median_rtt_gt')
+        median_rtt_lte = request.query_params.get('median_rtt_lte')
+        median_rtt_gte = request.query_params.get('median_rtt_gte')
 
         query_list = []
 
@@ -25,6 +25,12 @@ class IpMetricsViewSet(viewsets.ViewSet):
 
         if asn is not None:
             query_list.append(Q(ip__member__asn__number=asn))
+
+        if median_rtt_gte is not None:
+            query_list.append(Q(median_rtt__gte=median_rtt_gte))
+
+        if median_rtt_lte is not None:
+            query_list.append(Q(median_rtt__lte=median_rtt_lte))
 
         if query_list:
             entries = models.IpMetric.objects\
