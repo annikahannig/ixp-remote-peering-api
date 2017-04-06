@@ -76,6 +76,10 @@ class Command(BaseCommand):
         """Get or create ip record"""
         location = self._import_location(row)
         member = self._import_member(row)
+        ip_version = 4
+        if len(row['ip']) > 15:
+            ip_version = 6 # cringe.
+
         ip, _ = models.Ip.objects.get_or_create(address=row['ip'],
                                                 version=4,
                                                 member=member,
