@@ -112,8 +112,10 @@ class Command(BaseCommand):
                                                     created_at=date)
 
         """
+        ixp = self._import_ixp(row)
         ip = self._import_ip(row, date)
         metric, _ = models.IpMetric.objects.get_or_create(ip=ip,
+                                                          ixp=ixp,
                                                           median_rtt=row['median_rtt'],
                                                           created_at=date)
         return metric

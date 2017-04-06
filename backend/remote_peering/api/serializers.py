@@ -68,13 +68,20 @@ class IpSerializer(serializers.ModelSerializer):
                   'created_at')
         depth = 2
 
+class IpMetricIxpSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = models.Ixp
+        fields = ('id', 'name', 'peeringdb_id')
+
 
 class IpMetricSerializer(serializers.ModelSerializer):
     ip = IpSerializer()
+    ixp = IpMetricIxpSerializer()
 
     class Meta:
         model = models.IpMetric
-        fields = ('id', 'ip', 'median_rtt', 'created_at')
+        fields = ('id', 'ip', 'median_rtt', 'created_at', 'ixp')
         depth = 2
 
 

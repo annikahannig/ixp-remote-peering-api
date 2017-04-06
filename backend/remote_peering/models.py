@@ -71,7 +71,7 @@ class IpMetricManager(models.Manager):
 
     def get_queryset(self):
         qs = super(IpMetricManager, self).get_queryset()
-        qs = qs.prefetch_related("ip", "ip__member", "ip__locations")
+        qs = qs.prefetch_related("ip", "ip__member", "ip__locations", "ixp")
         return qs
 
 
@@ -80,6 +80,7 @@ class IpMetric(models.Model):
     median_rtt = models.FloatField()
 
     created_at = models.DateTimeField()
+    ixp = models.ForeignKey(Ixp, null=True)
 
     objects = IpMetricManager()
 
