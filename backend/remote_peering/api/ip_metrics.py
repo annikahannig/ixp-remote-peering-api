@@ -26,7 +26,7 @@ class IpMetricsViewSet(viewsets.ViewSet):
         if asn is not None:
             query_list.append(Q(ip__member__asn__number=asn))
 
-        if created_at is not None or ip_v4 is not None or asn is not None:
+        if query_list:
             entries = models.IpMetric.objects\
                 .filter(reduce(operator.and_, query_list))
         else:
