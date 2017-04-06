@@ -8,6 +8,12 @@ import json
 
 from remote_peering import models
 
+"""
+See Import IpMetric method
+on how to import additional metrices
+"""
+
+
 class Command(BaseCommand):
     """
     Import remote interface file
@@ -77,8 +83,8 @@ class Command(BaseCommand):
         location = self._import_location(row)
         member = self._import_member(row)
         ip_version = 4
-        if len(row['ip']) > 15:
-            ip_version = 6 # cringe.
+        if ':' in row['ip']:
+            ip_version = 6
 
         ip, _ = models.Ip.objects.get_or_create(address=row['ip'],
                                                 version=4,
@@ -91,7 +97,21 @@ class Command(BaseCommand):
 
 
     def _import_ip_metric(self, row, date):
-        """Extract ip metric from row"""
+        """
+        Extract ip metric from row
+
+        This is the place to add additional metrices.
+            - make sure you updated your model
+            - then add the new attribute to the
+              IpMetric get_or_create statement:
+
+              e.g: Add as_pathlenth
+              models.IpMetric.objects.get_or_create(ip=ip,
+                                                    median_rtt=row['median_rtt'],
+                                                    as_pathlength=row['aspathlen'],
+                                                    created_at=date)
+
+        """
         ip = self._import_ip(row, date)
         metric, _ = models.IpMetric.objects.get_or_create(ip=ip,
                                                           median_rtt=row['median_rtt'],
