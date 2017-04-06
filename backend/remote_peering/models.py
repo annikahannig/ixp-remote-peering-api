@@ -3,6 +3,24 @@ from __future__ import unicode_literals
 from django.db import models
 
 
+"""
+
+See:
+https://docs.djangoproject.com/en/1.11/ref/models/fields/
+
+for field reference.
+
+Remeber to run
+
+    ./bin/manage makemigrations
+
+and
+
+    ./bin/manage migrate
+
+"""
+
+
 class As(models.Model):
     number = models.IntegerField(unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -57,6 +75,7 @@ class IpMetricManager(models.Manager):
 class IpMetric(models.Model):
     ip = models.ForeignKey(Ip)
     median_rtt = models.FloatField()
+
     created_at = models.DateTimeField()
 
     objects = IpMetricManager()
