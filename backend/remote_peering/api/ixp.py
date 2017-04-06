@@ -27,10 +27,9 @@ class IxpViewSet(viewsets.ViewSet):
         ixp_name = request.query_params.get('name')
         peeringdb_id = request.query_params.get('peeringdb_id')
 
-        start = request.query_params.get('start')
-        start = int(start) if start else 0
+        start = int(request.query_params.get('start', 0))
+        limit = request.query_params.get('limit', None)
 
-        limit = request.query_params.get('limit')
         end = int(limit) + start if limit else None
 
         member_name = request.query_params.get('member')
@@ -55,7 +54,7 @@ class IxpViewSet(viewsets.ViewSet):
         entries = serializers.IxpSerializer(ixps[start:end], many=True).data
         return response.Response({
             "status": 200,
-            "start": int(start),
+            "start": start,
             "limit": int(limit) if limit else 0,
             "count": len(entries),
             "data": entries
