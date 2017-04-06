@@ -1,6 +1,5 @@
-
-
 from rest_framework import viewsets, response
+
 from remote_peering import models
 from remote_peering.api import serializers
 
@@ -8,6 +7,7 @@ from django.db.models import Q
 from django.core.exceptions import *
 
 import operator
+
 
 class IxpViewSet(viewsets.ViewSet):
     """
@@ -43,7 +43,6 @@ class IxpViewSet(viewsets.ViewSet):
 
         if member_name:
             filters.append(Q(members__name__icontains=member_name))
-
 
         if filters:
             ixp_filter = reduce(operator.and_, filters)

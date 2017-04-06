@@ -9,7 +9,6 @@ from django.db.models import Q
 import operator
 
 
-
 class IpMetricsViewSet(viewsets.ViewSet):
     """
     Retrieve and filter IP metrics.

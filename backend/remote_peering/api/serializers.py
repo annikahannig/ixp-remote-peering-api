@@ -19,10 +19,19 @@ class MemberSerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'asn')
 
 
+class AsIxpSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Ixp
+        fields = ('id', 'name')
+
+
 class AsMemberSerializer(serializers.ModelSerializer):
+    ixps = AsIxpSerializer(source='ixp_set', many=True)
+
     class Meta:
         model = models.Member
-        fields = ('id', 'name')
+        fields = ('id', 'name', 'ixps')
+        depth = 2
 
 
 class AsSerializer(serializers.ModelSerializer):
