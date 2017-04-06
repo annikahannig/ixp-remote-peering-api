@@ -9,9 +9,11 @@ from remote_peering import utils
 
 class AsnViewSet(viewsets.ViewSet):
     """
-    Retrieve ASNs - Supported QueryParameters:
+    Retrieve and filter a list of ASNs.
 
-        number=<asn>[,<asn>...]
+    ### Supported QueryParameters:
+
+    * `?number=<asn>[,<asn>...]`
     """
 
     def list(self, request):
