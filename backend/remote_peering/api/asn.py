@@ -25,7 +25,7 @@ class AsnViewSet(viewsets.ViewSet):
     def retrieve(self, request, pk=None):
         try:
             asn = models.As.objects.get(pk=pk)
-            asn = serializers.AsSerializer(asn).data
+            asn = [serializers.AsSerializer(asn).data]
         except MultipleObjectsReturned:
             return response.Response({
                 "status": 400,
