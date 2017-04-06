@@ -12,12 +12,22 @@ class Command(BaseCommand):
 
         members = models.Member.objects.all().prefetch_related('asn')
         for member in members:
-            if member.name:
-                continue
             name = pdb.orgname_by_asn(member.asn.number)
-            if name:
+            current = member.name
+            if name == current:
+                print("AS{} => {} still valid".format(
+                    member.asn.number,
+                    member.name))
+
+            if name != current:
                 member.name = name
                 member.save()
 
-                print("Resolved {} for AS{}".format(name, member.asn.number))
+                if current:
+                    print("Changed name: {} for AS{}, was: {}".format(
+                        name, member.asn.number, current))
+                else:
+                    print("Resolved name: {} for AS{}".format(
+                        name, member.asn.number))
+
 
