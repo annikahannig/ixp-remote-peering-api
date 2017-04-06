@@ -7,7 +7,7 @@ from remote_peering import models
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Member
-        fields = ('name', 'created_at')
+        fields = ('id', 'name', 'created_at')
 
 
 class AsSerializer(serializers.ModelSerializer):
@@ -15,25 +15,25 @@ class AsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.As
-        fields = ('number', 'created_at', 'member')
+        fields = ('id', 'number', 'created_at', 'member')
         depth = 1
 
 
 class IxpSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Ixp
-        fields = ('name', 'members', 'locations', 'peeringdb_id')
+        fields = ('id', 'name', 'members', 'locations', 'peeringdb_id')
         depth = 2
 
 
 class LocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Location
-        fields = ('continent', 'country', 'city')
+        fields = ('id', 'continent', 'country', 'city')
 
 
 class IpMetricSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.IpMetric
-        fields = ('address', 'version', 'longitude', 'latitude', 'member',
+        fields = ('id', 'address', 'version', 'longitude', 'latitude', 'member',
                   'locations', 'created_at')

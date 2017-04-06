@@ -7,8 +7,11 @@ from django.core.exceptions import *
 
 class IxpViewSet(viewsets.ViewSet):
     def list(self, request):
+        name = request.query_params.get('name')
+        peering_id = request.query_params.get('peering_id')
+
         entries = models.Ixp.objects.all()
-        entries = serializers.AsSerializer(entries, many=True)
+        entries = serializers.IxpSerializer(entries, many=True)
 
         return response.Response({
             "status": 200,
