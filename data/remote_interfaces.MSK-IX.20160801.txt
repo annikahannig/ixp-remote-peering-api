@@ -1,107 +1,107 @@
-{"city": "Almaty", "ip": "91.185.5.233", "median_rtt": "53.304377", "lon": 76.910420895475724, "continent": "as", "country": "kz", "lat": 43.583167757564688, "ixp": "MSK-IX", "asn": "41798"}
-{"city": "Vilnius", "ip": "82.135.180.2", "median_rtt": "36.8183115", "lon": 25.302711670274103, "continent": "eu", "country": "lt", "lat": 54.677064342909908, "ixp": "MSK-IX", "asn": "8764"}
-{"city": "Abovyan", "ip": "185.48.240.33", "median_rtt": "34.100743", "lon": 44.496847534256766, "continent": "as", "country": "am", "lat": 40.181802956458846, "ixp": "MSK-IX", "asn": "8932"}
-{"city": "Rostov-on-Don", "ip": "176.96.191.64", "median_rtt": "21.2866", "lon": 39.664040681446984, "continent": "eu", "country": "ru", "lat": 47.173997910835986, "ixp": "MSK-IX", "asn": "52041"}
-{"city": "Voronezh", "ip": "178.210.33.17", "median_rtt": "12.9116185", "lon": 39.225500593874081, "continent": "eu", "country": "ru", "lat": 51.504398774855488, "ixp": "MSK-IX", "asn": "43727"}
-{"city": "Sankt-Peterburg", "ip": "212.48.204.203", "median_rtt": "11.32718", "lon": 30.346407344003186, "continent": "eu", "country": "ru", "lat": 59.931985440869546, "ixp": "MSK-IX", "asn": "8997"}
-{"city": "Sankt-Peterburg", "ip": "212.48.204.199", "median_rtt": "14.6837445", "lon": 30.334995938526376, "continent": "eu", "country": "ru", "lat": 59.865293292704514, "ixp": "MSK-IX", "asn": "8997"}
-{"city": "Salaspils", "ip": "80.232.187.125", "median_rtt": "30.9603975", "lon": 24.141854451764146, "continent": "eu", "country": "lv", "lat": 56.973375555590295, "ixp": "MSK-IX", "asn": "12578"}
-{"city": "Saratov", "ip": "109.195.24.18", "median_rtt": "28.907274", "lon": 46.035568992996438, "continent": "eu", "country": "ru", "lat": 51.526884590277618, "ixp": "MSK-IX", "asn": "50543"}
-{"city": "Almaty", "ip": "46.227.185.241", "median_rtt": "56.5681525", "lon": 76.924313908613172, "continent": "as", "country": "kz", "lat": 42.775729680587702, "ixp": "MSK-IX", "asn": "197556"}
-{"city": "Rostov-on-Don", "ip": "176.96.191.90", "median_rtt": "21.420293", "lon": 39.658044594704336, "continent": "eu", "country": "ru", "lat": 47.162587125492685, "ixp": "MSK-IX", "asn": "52041"}
-{"city": "Riga", "ip": "78.154.154.165", "median_rtt": "26.5024105", "lon": 24.09542130917707, "continent": "eu", "country": "lv", "lat": 56.949637271209994, "ixp": "MSK-IX", "asn": "5518"}
-{"city": "Kharkiv", "ip": "46.164.128.21", "median_rtt": "30.2085055", "lon": 36.239549621889978, "continent": "eu", "country": "ua", "lat": 50.154096679634705, "ixp": "MSK-IX", "asn": "21219"}
-{"city": "Kiev", "ip": "195.177.68.121", "median_rtt": "23.894086", "lon": 30.486198655363911, "continent": "eu", "country": "ua", "lat": 50.448956988953192, "ixp": "MSK-IX", "asn": "3252"}
-{"city": "Abovyan", "ip": "46.19.96.165", "median_rtt": "31.097862", "lon": 44.514413051205686, "continent": "as", "country": "am", "lat": 40.171625015149537, "ixp": "MSK-IX", "asn": "49800"}
-{"city": "Kazan", "ip": "109.194.184.30", "median_rtt": "26.588166", "lon": 49.134100439809288, "continent": "eu", "country": "ru", "lat": 55.750846055291753, "ixp": "MSK-IX", "asn": "41668"}
-{"city": "Moscow", "ip": "80.77.167.194", "median_rtt": "2.9043625", "lon": 37.622319445187387, "continent": "eu", "country": "ru", "lat": 55.650723170835725, "ixp": "MSK-IX", "asn": "28917"}
-{"city": "Perm", "ip": "212.33.233.91", "median_rtt": "21.949555", "lon": 56.191989022486723, "continent": "eu", "country": "ru", "lat": 58.002345167872853, "ixp": "MSK-IX", "asn": "12768"}
-{"city": "yerevan", "ip": "46.19.96.169", "median_rtt": "30.801415", "lon": 44.525864864128465, "continent": "as", "country": "am", "lat": 40.187228960427944, "ixp": "MSK-IX", "asn": "49800"}
-{"city": "Minsk", "ip": "93.85.80.66", "median_rtt": "26.201094", "lon": 27.63581112312627, "continent": "eu", "country": "by", "lat": 53.947365226842422, "ixp": "MSK-IX", "asn": "6697"}
-{"city": "Kiev", "ip": "77.120.1.41", "median_rtt": "21.769733", "lon": 30.534709015131192, "continent": "eu", "country": "ua", "lat": 50.452754407723525, "ixp": "MSK-IX", "asn": "25229"}
-{"city": "Kharkiv", "ip": "193.239.72.13", "median_rtt": "13.5848565", "lon": 36.234061967172536, "continent": "eu", "country": "ua", "lat": 49.952272502417493, "ixp": "MSK-IX", "asn": "35297"}
-{"city": "tagan", "ip": "95.174.97.1", "median_rtt": "22.1524225", "lon": 77.280617561171809, "continent": "eu", "country": "ru", "lat": 55.014559330889909, "ixp": "MSK-IX", "asn": "49037"}
-{"city": "Abovyan", "ip": "185.48.241.17", "median_rtt": "34.311175", "lon": 44.541335028633867, "continent": "as", "country": "am", "lat": 40.179872027432005, "ixp": "MSK-IX", "asn": "8932"}
-{"city": "False", "ip": "109.200.131.1", "median_rtt": "38.74903", "lon": 34.08895334382801, "continent": "eu", "country": "ua", "lat": 44.954731438150525, "ixp": "MSK-IX", "asn": "6789"}
-{"city": "Kirov", "ip": "109.194.200.30", "median_rtt": "20.612356", "lon": 49.653419580146455, "continent": "eu", "country": "ru", "lat": 58.613201656210627, "ixp": "MSK-IX", "asn": "41727"}
-{"city": "Frankfurt", "ip": "212.200.5.53", "median_rtt": "47.1516435", "lon": 8.6724357389122062, "continent": "eu", "country": "de", "lat": 50.117623543113304, "ixp": "MSK-IX", "asn": "8400"}
-{"city": "g. Volgograd", "ip": "88.87.67.46", "median_rtt": "27.8136455", "lon": 44.550669493814823, "continent": "eu", "country": "ru", "lat": 48.77999688432709, "ixp": "MSK-IX", "asn": "39435"}
-{"city": "Kiev", "ip": "195.177.68.41", "median_rtt": "22.09686", "lon": 30.528673621196145, "continent": "eu", "country": "ua", "lat": 50.413845445220424, "ixp": "MSK-IX", "asn": "3252"}
-{"city": "Omsk", "ip": "109.194.120.30", "median_rtt": "55.755195", "lon": 73.256321611080239, "continent": "eu", "country": "ru", "lat": 55.021611455205843, "ixp": "MSK-IX", "asn": "41843"}
-{"city": "Salaspils", "ip": "195.122.18.249", "median_rtt": "24.8056375", "lon": 24.251492950618388, "continent": "eu", "country": "lv", "lat": 56.980873002153004, "ixp": "MSK-IX", "asn": "12578"}
-{"city": "Almaty", "ip": "91.185.5.142", "median_rtt": "59.8972475", "lon": 76.915037751674774, "continent": "as", "country": "kz", "lat": 42.967161245154657, "ixp": "MSK-IX", "asn": "41798"}
-{"city": "Yekaterinburg", "ip": "91.221.181.200", "median_rtt": "28.9021325", "lon": 60.618335613938328, "continent": "eu", "country": "ru", "lat": 56.86650506340429, "ixp": "MSK-IX", "asn": "13094"}
-{"city": "Kharkiv", "ip": "80.93.127.142", "median_rtt": "72.542011", "lon": 36.225787337267136, "continent": "eu", "country": "ua", "lat": 49.865245676033197, "ixp": "MSK-IX", "asn": "35320"}
-{"city": "Moscow", "ip": "62.140.239.244", "median_rtt": "2.647725", "lon": 37.652165538465212, "continent": "eu", "country": "ru", "lat": 55.641090684973044, "ixp": "MSK-IX", "asn": "28917"}
-{"city": "Moscow", "ip": "195.208.208.223", "median_rtt": "4.468993", "lon": 37.383966793709163, "continent": "eu", "country": "ru", "lat": 55.70572554263714, "ixp": "MSK-IX", "asn": "31133"}
-{"city": "Kazan", "ip": "37.230.146.1", "median_rtt": "15.719519", "lon": 49.174525275216737, "continent": "eu", "country": "ru", "lat": 55.801859639393051, "ixp": "MSK-IX", "asn": "62067"}
-{"city": "Kiev", "ip": "77.120.0.153", "median_rtt": "22.3023645", "lon": 30.450890722795581, "continent": "eu", "country": "ua", "lat": 50.5241796402739, "ixp": "MSK-IX", "asn": "25229"}
-{"city": "Sankt-Peterburg", "ip": "212.48.194.151", "median_rtt": "11.677186", "lon": 30.331604010921581, "continent": "eu", "country": "ru", "lat": 59.870899017892121, "ixp": "MSK-IX", "asn": "8997"}
-{"city": "Kiev", "ip": "195.69.84.58", "median_rtt": "23.063812", "lon": 30.520499691476548, "continent": "eu", "country": "ua", "lat": 50.444624287052825, "ixp": "MSK-IX", "asn": "29107"}
-{"city": "Salaspils", "ip": "81.198.165.169", "median_rtt": "30.057222", "lon": 24.134326675019455, "continent": "eu", "country": "lv", "lat": 56.927436958377271, "ixp": "MSK-IX", "asn": "12578"}
-{"city": "Abovyan", "ip": "109.68.121.219", "median_rtt": "35.9151435", "lon": 44.475739250954419, "continent": "as", "country": "am", "lat": 40.222853553062563, "ixp": "MSK-IX", "asn": "8226"}
-{"city": "Rostov-on-Don", "ip": "176.96.191.237", "median_rtt": "21.7662765", "lon": 39.650181637303966, "continent": "eu", "country": "ru", "lat": 47.252241247345587, "ixp": "MSK-IX", "asn": "52041"}
-{"city": "Kharkiv", "ip": "80.91.161.142", "median_rtt": "21.503236", "lon": 36.254570947538397, "continent": "eu", "country": "ua", "lat": 50.000509661945173, "ixp": "MSK-IX", "asn": "21219"}
-{"city": "Krasnoyarsk", "ip": "217.117.184.126", "median_rtt": "62.6442845", "lon": 92.884687393013991, "continent": "eu", "country": "ru", "lat": 55.8967534091421, "ixp": "MSK-IX", "asn": "16300"}
-{"city": "Sankt-Peterburg", "ip": "212.48.198.238", "median_rtt": "12.6957725", "lon": 30.330621699020867, "continent": "eu", "country": "ru", "lat": 59.927551205741047, "ixp": "MSK-IX", "asn": "8997"}
-{"city": "Vilnius", "ip": "82.135.182.2", "median_rtt": "27.18319", "lon": 25.28902274941445, "continent": "eu", "country": "lt", "lat": 54.701621497566549, "ixp": "MSK-IX", "asn": "8764"}
-{"city": "Kazan", "ip": "109.194.184.18", "median_rtt": "15.3154595", "lon": 49.171711968381878, "continent": "eu", "country": "ru", "lat": 55.768120614381672, "ixp": "MSK-IX", "asn": "41668"}
-{"city": "Moscow", "ip": "80.64.102.196", "median_rtt": "3.3131525", "lon": 37.726415505825976, "continent": "eu", "country": "ru", "lat": 55.732749540907889, "ixp": "MSK-IX", "asn": "20764"}
-{"city": "Warsaw", "ip": "193.111.37.26", "median_rtt": "35.54445", "lon": 20.939014750010173, "continent": "eu", "country": "pl", "lat": 52.212926755429272, "ixp": "MSK-IX", "asn": "24724"}
-{"city": "Moscow", "ip": "213.24.85.229", "median_rtt": "3.616513", "lon": 37.722257065168769, "continent": "eu", "country": "ru", "lat": 55.718472970929952, "ixp": "MSK-IX", "asn": "12389"}
-{"city": "Moscow", "ip": "46.151.158.234", "median_rtt": "2.8289825", "lon": 37.620118680608144, "continent": "eu", "country": "ru", "lat": 55.758719162355192, "ixp": "MSK-IX", "asn": "50473"}
-{"city": "Almaty", "ip": "91.185.5.5", "median_rtt": "60.287107", "lon": 76.911430804508186, "continent": "as", "country": "kz", "lat": 43.318989499029129, "ixp": "MSK-IX", "asn": "41798"}
-{"city": "Salaspils", "ip": "195.122.0.154", "median_rtt": "24.404435", "lon": 24.181652247001313, "continent": "eu", "country": "lv", "lat": 56.961235039231568, "ixp": "MSK-IX", "asn": "12578"}
-{"city": "Abovyan", "ip": "185.48.241.1", "median_rtt": "35.512711", "lon": 44.512952269100936, "continent": "as", "country": "am", "lat": 40.191723368548239, "ixp": "MSK-IX", "asn": "8932"}
-{"city": "Moscow", "ip": "213.248.7.54", "median_rtt": "3.3020165", "lon": 37.612000538251266, "continent": "eu", "country": "ru", "lat": 55.671046304462294, "ixp": "MSK-IX", "asn": "12695"}
-{"city": "Moscow", "ip": "178.210.32.57", "median_rtt": "2.993735", "lon": 37.618464894318571, "continent": "eu", "country": "ru", "lat": 55.612482736368712, "ixp": "MSK-IX", "asn": "43727"}
-{"city": "Voronezh", "ip": "109.106.130.97", "median_rtt": "11.99885", "lon": 39.187028990329857, "continent": "eu", "country": "ru", "lat": 51.451704613759865, "ixp": "MSK-IX", "asn": "43727"}
-{"city": "Riga", "ip": "194.19.226.114", "median_rtt": "27.114505", "lon": 24.127583482171612, "continent": "eu", "country": "lv", "lat": 56.960217236820988, "ixp": "MSK-IX", "asn": "5518"}
-{"city": "Kiev", "ip": "77.120.1.33", "median_rtt": "23.2200575", "lon": 30.511413039070309, "continent": "eu", "country": "ua", "lat": 50.430915838069041, "ixp": "MSK-IX", "asn": "25229"}
-{"city": "Novosibirsk", "ip": "109.194.88.30", "median_rtt": "47.064202", "lon": 82.972903531926377, "continent": "eu", "country": "ru", "lat": 54.997139984842413, "ixp": "MSK-IX", "asn": "43478"}
-{"city": "st petersburg", "ip": "212.232.64.2", "median_rtt": "10.868", "lon": 30.313573020717062, "continent": "eu", "country": "ru", "lat": 59.933320524374324, "ixp": "MSK-IX", "asn": "39102"}
-{"city": "Moscow", "ip": "62.140.245.164", "median_rtt": "3.1042945", "lon": 37.636958516501267, "continent": "eu", "country": "ru", "lat": 55.638759327577922, "ixp": "MSK-IX", "asn": "28917"}
-{"city": "Yekaterinburg", "ip": "87.251.181.49", "median_rtt": "33.527047", "lon": 60.646273295864965, "continent": "eu", "country": "ru", "lat": 56.825921029564313, "ixp": "MSK-IX", "asn": "5563"}
-{"city": "Magnitogorsk", "ip": "109.195.216.22", "median_rtt": "29.19744", "lon": 58.959852561469539, "continent": "eu", "country": "ru", "lat": 53.382803672751386, "ixp": "MSK-IX", "asn": "56377"}
-{"city": "Almaty", "ip": "91.185.5.54", "median_rtt": "56.860715", "lon": 76.899750103274684, "continent": "as", "country": "kz", "lat": 43.658439777250074, "ixp": "MSK-IX", "asn": "41798"}
-{"city": "Samara", "ip": "85.113.62.151", "median_rtt": "12.361", "lon": 50.241666111023818, "continent": "eu", "country": "ru", "lat": 53.226003080559501, "ixp": "MSK-IX", "asn": "34533"}
-{"city": "Rostov-on-Don", "ip": "128.0.90.182", "median_rtt": "21.03157", "lon": 39.651342427486391, "continent": "eu", "country": "ru", "lat": 47.243956308288396, "ixp": "MSK-IX", "asn": "52041"}
-{"city": "Kharkiv", "ip": "80.91.160.130", "median_rtt": "53.877405", "lon": 36.232550608299398, "continent": "eu", "country": "ua", "lat": 50.132659374011624, "ixp": "MSK-IX", "asn": "21219"}
-{"city": "Chessington", "ip": "124.6.36.33", "median_rtt": "56.1223795", "lon": 0.0055306365070827111, "continent": "eu", "country": "gb", "lat": 51.503373964213154, "ixp": "MSK-IX", "asn": "24482"}
-{"city": "Tyumen", "ip": "37.60.16.165", "median_rtt": "35.195143", "lon": 65.484703055088389, "continent": "eu", "country": "ru", "lat": 57.143407989714703, "ixp": "MSK-IX", "asn": "50923"}
-{"city": "False", "ip": "193.0.240.40", "median_rtt": "24.976565", "lon": 32.038440710021789, "continent": "eu", "country": "ua", "lat": 49.450559445045798, "ixp": "MSK-IX", "asn": "25133"}
-{"city": "london", "ip": "124.6.36.39", "median_rtt": "56.78", "lon": -0.062315825223319729, "continent": "eu", "country": "gb", "lat": 51.503500778133684, "ixp": "MSK-IX", "asn": "24482"}
-{"city": "Moscow", "ip": "81.200.12.210", "median_rtt": "3.46448", "lon": 37.384212878287315, "continent": "eu", "country": "ru", "lat": 55.831005274538036, "ixp": "MSK-IX", "asn": "29124"}
-{"city": "Moscow", "ip": "213.79.104.161", "median_rtt": "5.3579535", "lon": 37.783240814544321, "continent": "eu", "country": "ru", "lat": 55.946809341306817, "ixp": "MSK-IX", "asn": "8732"}
-{"city": "Moscow", "ip": "62.140.245.158", "median_rtt": "2.900395", "lon": 37.624774516211701, "continent": "eu", "country": "ru", "lat": 55.666347445255283, "ixp": "MSK-IX", "asn": "28917"}
-{"city": "False", "ip": "109.200.131.97", "median_rtt": "39.0681775", "lon": 34.110093269083663, "continent": "eu", "country": "ua", "lat": 44.928192044674326, "ixp": "MSK-IX", "asn": "6789"}
-{"city": "Krasnoyarsk", "ip": "217.117.184.249", "median_rtt": "61.03399", "lon": 92.868645496376516, "continent": "eu", "country": "ru", "lat": 55.942803246783953, "ixp": "MSK-IX", "asn": "16300"}
-{"city": "Abovyan", "ip": "185.48.241.57", "median_rtt": "33.737095", "lon": 44.51400237705024, "continent": "as", "country": "am", "lat": 40.197762972790699, "ixp": "MSK-IX", "asn": "8932"}
-{"city": "Samara", "ip": "85.113.62.125", "median_rtt": "18.686555", "lon": 50.242115024092946, "continent": "eu", "country": "ru", "lat": 53.209348332273223, "ixp": "MSK-IX", "asn": "34533"}
-{"city": "Samara", "ip": "85.113.62.127", "median_rtt": "12.438", "lon": 50.245018303207502, "continent": "eu", "country": "ru", "lat": 53.221412335118515, "ixp": "MSK-IX", "asn": "34533"}
-{"city": "Perm", "ip": "212.33.233.57", "median_rtt": "32.003815", "lon": 56.174553787946152, "continent": "eu", "country": "ru", "lat": 57.969378998105377, "ixp": "MSK-IX", "asn": "12768"}
-{"city": "Abovyan", "ip": "185.77.193.70", "median_rtt": "31.13511", "lon": 44.512600353412573, "continent": "as", "country": "am", "lat": 40.203073974047534, "ixp": "MSK-IX", "asn": "51090"}
-{"city": "Magnitogorsk", "ip": "109.195.216.30", "median_rtt": "30.56474", "lon": 58.973637644503768, "continent": "eu", "country": "ru", "lat": 53.348169981610788, "ixp": "MSK-IX", "asn": "56377"}
-{"city": "Voronezh", "ip": "178.210.33.245", "median_rtt": "15.7716515", "lon": 39.204498021596791, "continent": "eu", "country": "ru", "lat": 52.09608982116805, "ixp": "MSK-IX", "asn": "43727"}
-{"city": "Frankfurt", "ip": "212.200.5.77", "median_rtt": "49.2332855", "lon": 8.6162225564224606, "continent": "eu", "country": "de", "lat": 50.114223396441396, "ixp": "MSK-IX", "asn": "8400"}
-{"city": "Sofia", "ip": "185.44.116.231", "median_rtt": "71.0438545", "lon": 23.362951628888052, "continent": "eu", "country": "bg", "lat": 42.612454595504815, "ixp": "MSK-IX", "asn": "47872"}
-{"city": "Rostov-on-Don", "ip": "89.221.201.17", "median_rtt": "19.6674435", "lon": 39.767702056337932, "continent": "eu", "country": "ru", "lat": 47.307745091212624, "ixp": "MSK-IX", "asn": "41691"}
-{"city": "Samara", "ip": "85.113.62.149", "median_rtt": "18.439813", "lon": 50.230017811930537, "continent": "eu", "country": "ru", "lat": 53.209352310347626, "ixp": "MSK-IX", "asn": "34533"}
-{"city": "Omsk", "ip": "109.194.120.18", "median_rtt": "47.388595", "lon": 73.294776919751797, "continent": "eu", "country": "ru", "lat": 55.069036366428548, "ixp": "MSK-IX", "asn": "41843"}
-{"city": "Sankt-Peterburg", "ip": "91.192.191.150", "median_rtt": "10.468226", "lon": 30.464620394197905, "continent": "eu", "country": "ru", "lat": 59.94275192745085, "ixp": "MSK-IX", "asn": "42518"}
-{"city": "Riga", "ip": "78.154.154.89", "median_rtt": "26.6207755", "lon": 24.101233290268613, "continent": "eu", "country": "lv", "lat": 56.923231960741617, "ixp": "MSK-IX", "asn": "5518"}
-{"city": "Warsaw", "ip": "212.91.9.73", "median_rtt": "36.117128", "lon": 20.919428314547051, "continent": "eu", "country": "pl", "lat": 52.272881301389816, "ixp": "MSK-IX", "asn": "24724"}
-{"city": "Almaty", "ip": "91.185.5.73", "median_rtt": "58.1647825", "lon": 76.908897481776435, "continent": "as", "country": "kz", "lat": 43.195496893025755, "ixp": "MSK-IX", "asn": "41798"}
-{"city": "g. Troitsk", "ip": "178.215.66.145", "median_rtt": "97.7788415", "lon": 37.281541758745277, "continent": "eu", "country": "ru", "lat": 55.498911700367508, "ixp": "MSK-IX", "asn": "49342"}
-{"city": "False", "ip": "80.245.112.11", "median_rtt": "38.690861", "lon": 34.094791692762165, "continent": "eu", "country": "ua", "lat": 44.933650827129419, "ixp": "MSK-IX", "asn": "6789"}
-{"city": "Vilnius", "ip": "82.135.187.68", "median_rtt": "41.500424", "lon": 25.301469435312736, "continent": "eu", "country": "lt", "lat": 54.689506100921989, "ixp": "MSK-IX", "asn": "8764"}
-{"city": "riga", "ip": "78.154.153.166", "median_rtt": "23.97", "lon": 24.098725256131591, "continent": "eu", "country": "lv", "lat": 56.929802269536815, "ixp": "MSK-IX", "asn": "5518"}
-{"city": "Riga", "ip": "80.232.146.1", "median_rtt": "24.4301925", "lon": 24.20795157729502, "continent": "eu", "country": "lv", "lat": 56.984486311694766, "ixp": "MSK-IX", "asn": "12578"}
-{"city": "Abovyan", "ip": "185.48.240.21", "median_rtt": "33.6844075", "lon": 44.498368251811506, "continent": "as", "country": "am", "lat": 40.196924367262952, "ixp": "MSK-IX", "asn": "8932"}
-{"city": "Samara", "ip": "188.234.157.109", "median_rtt": "28.060038", "lon": 50.217197757533647, "continent": "eu", "country": "ru", "lat": 53.217691596029944, "ixp": "MSK-IX", "asn": "9049"}
-{"city": "Almaty", "ip": "91.185.5.190", "median_rtt": "57.992655", "lon": 76.931239984196296, "continent": "as", "country": "kz", "lat": 43.642819246157707, "ixp": "MSK-IX", "asn": "41798"}
-{"city": "Kharkiv", "ip": "217.20.161.85", "median_rtt": "16.4175475", "lon": 36.220276894000904, "continent": "eu", "country": "ua", "lat": 49.774442782932212, "ixp": "MSK-IX", "asn": "15772"}
-{"city": "Abovyan", "ip": "185.48.241.73", "median_rtt": "34.4321625", "lon": 44.52269476983475, "continent": "as", "country": "am", "lat": 40.199795688152257, "ixp": "MSK-IX", "asn": "8932"}
-{"city": "Kharkiv", "ip": "217.20.161.6", "median_rtt": "19.744615", "lon": 36.240291977573484, "continent": "eu", "country": "ua", "lat": 49.920935621365125, "ixp": "MSK-IX", "asn": "15772"}
-{"city": "Moscow", "ip": "80.77.167.16", "median_rtt": "3.272523", "lon": 37.61200819691971, "continent": "eu", "country": "ru", "lat": 55.666129240839204, "ixp": "MSK-IX", "asn": "28917"}
-{"city": "Krasnodar", "ip": "46.29.8.1", "median_rtt": "24.4826925", "lon": 38.989726614651232, "continent": "eu", "country": "ru", "lat": 44.974148364539786, "ixp": "MSK-IX", "asn": "197204"}
+{"city": "Almaty", "ip": "91.185.5.233", "median_rtt": "53.304377", "lon": 76.910420895475724, "continent": "as", "country": "kz", "lat": 43.583167757564688, "ixp": "MSK-IX Moscow", "asn": "41798"}
+{"city": "Vilnius", "ip": "82.135.180.2", "median_rtt": "36.8183115", "lon": 25.302711670274103, "continent": "eu", "country": "lt", "lat": 54.677064342909908, "ixp": "MSK-IX Moscow", "asn": "8764"}
+{"city": "Abovyan", "ip": "185.48.240.33", "median_rtt": "34.100743", "lon": 44.496847534256766, "continent": "as", "country": "am", "lat": 40.181802956458846, "ixp": "MSK-IX Moscow", "asn": "8932"}
+{"city": "Rostov-on-Don", "ip": "176.96.191.64", "median_rtt": "21.2866", "lon": 39.664040681446984, "continent": "eu", "country": "ru", "lat": 47.173997910835986, "ixp": "MSK-IX Moscow", "asn": "52041"}
+{"city": "Voronezh", "ip": "178.210.33.17", "median_rtt": "12.9116185", "lon": 39.225500593874081, "continent": "eu", "country": "ru", "lat": 51.504398774855488, "ixp": "MSK-IX Moscow", "asn": "43727"}
+{"city": "Sankt-Peterburg", "ip": "212.48.204.203", "median_rtt": "11.32718", "lon": 30.346407344003186, "continent": "eu", "country": "ru", "lat": 59.931985440869546, "ixp": "MSK-IX Moscow", "asn": "8997"}
+{"city": "Sankt-Peterburg", "ip": "212.48.204.199", "median_rtt": "14.6837445", "lon": 30.334995938526376, "continent": "eu", "country": "ru", "lat": 59.865293292704514, "ixp": "MSK-IX Moscow", "asn": "8997"}
+{"city": "Salaspils", "ip": "80.232.187.125", "median_rtt": "30.9603975", "lon": 24.141854451764146, "continent": "eu", "country": "lv", "lat": 56.973375555590295, "ixp": "MSK-IX Moscow", "asn": "12578"}
+{"city": "Saratov", "ip": "109.195.24.18", "median_rtt": "28.907274", "lon": 46.035568992996438, "continent": "eu", "country": "ru", "lat": 51.526884590277618, "ixp": "MSK-IX Moscow", "asn": "50543"}
+{"city": "Almaty", "ip": "46.227.185.241", "median_rtt": "56.5681525", "lon": 76.924313908613172, "continent": "as", "country": "kz", "lat": 42.775729680587702, "ixp": "MSK-IX Moscow", "asn": "197556"}
+{"city": "Rostov-on-Don", "ip": "176.96.191.90", "median_rtt": "21.420293", "lon": 39.658044594704336, "continent": "eu", "country": "ru", "lat": 47.162587125492685, "ixp": "MSK-IX Moscow", "asn": "52041"}
+{"city": "Riga", "ip": "78.154.154.165", "median_rtt": "26.5024105", "lon": 24.09542130917707, "continent": "eu", "country": "lv", "lat": 56.949637271209994, "ixp": "MSK-IX Moscow", "asn": "5518"}
+{"city": "Kharkiv", "ip": "46.164.128.21", "median_rtt": "30.2085055", "lon": 36.239549621889978, "continent": "eu", "country": "ua", "lat": 50.154096679634705, "ixp": "MSK-IX Moscow", "asn": "21219"}
+{"city": "Kiev", "ip": "195.177.68.121", "median_rtt": "23.894086", "lon": 30.486198655363911, "continent": "eu", "country": "ua", "lat": 50.448956988953192, "ixp": "MSK-IX Moscow", "asn": "3252"}
+{"city": "Abovyan", "ip": "46.19.96.165", "median_rtt": "31.097862", "lon": 44.514413051205686, "continent": "as", "country": "am", "lat": 40.171625015149537, "ixp": "MSK-IX Moscow", "asn": "49800"}
+{"city": "Kazan", "ip": "109.194.184.30", "median_rtt": "26.588166", "lon": 49.134100439809288, "continent": "eu", "country": "ru", "lat": 55.750846055291753, "ixp": "MSK-IX Moscow", "asn": "41668"}
+{"city": "Moscow", "ip": "80.77.167.194", "median_rtt": "2.9043625", "lon": 37.622319445187387, "continent": "eu", "country": "ru", "lat": 55.650723170835725, "ixp": "MSK-IX Moscow", "asn": "28917"}
+{"city": "Perm", "ip": "212.33.233.91", "median_rtt": "21.949555", "lon": 56.191989022486723, "continent": "eu", "country": "ru", "lat": 58.002345167872853, "ixp": "MSK-IX Moscow", "asn": "12768"}
+{"city": "yerevan", "ip": "46.19.96.169", "median_rtt": "30.801415", "lon": 44.525864864128465, "continent": "as", "country": "am", "lat": 40.187228960427944, "ixp": "MSK-IX Moscow", "asn": "49800"}
+{"city": "Minsk", "ip": "93.85.80.66", "median_rtt": "26.201094", "lon": 27.63581112312627, "continent": "eu", "country": "by", "lat": 53.947365226842422, "ixp": "MSK-IX Moscow", "asn": "6697"}
+{"city": "Kiev", "ip": "77.120.1.41", "median_rtt": "21.769733", "lon": 30.534709015131192, "continent": "eu", "country": "ua", "lat": 50.452754407723525, "ixp": "MSK-IX Moscow", "asn": "25229"}
+{"city": "Kharkiv", "ip": "193.239.72.13", "median_rtt": "13.5848565", "lon": 36.234061967172536, "continent": "eu", "country": "ua", "lat": 49.952272502417493, "ixp": "MSK-IX Moscow", "asn": "35297"}
+{"city": "tagan", "ip": "95.174.97.1", "median_rtt": "22.1524225", "lon": 77.280617561171809, "continent": "eu", "country": "ru", "lat": 55.014559330889909, "ixp": "MSK-IX Moscow", "asn": "49037"}
+{"city": "Abovyan", "ip": "185.48.241.17", "median_rtt": "34.311175", "lon": 44.541335028633867, "continent": "as", "country": "am", "lat": 40.179872027432005, "ixp": "MSK-IX Moscow", "asn": "8932"}
+{"city": "False", "ip": "109.200.131.1", "median_rtt": "38.74903", "lon": 34.08895334382801, "continent": "eu", "country": "ua", "lat": 44.954731438150525, "ixp": "MSK-IX Moscow", "asn": "6789"}
+{"city": "Kirov", "ip": "109.194.200.30", "median_rtt": "20.612356", "lon": 49.653419580146455, "continent": "eu", "country": "ru", "lat": 58.613201656210627, "ixp": "MSK-IX Moscow", "asn": "41727"}
+{"city": "Frankfurt", "ip": "212.200.5.53", "median_rtt": "47.1516435", "lon": 8.6724357389122062, "continent": "eu", "country": "de", "lat": 50.117623543113304, "ixp": "MSK-IX Moscow", "asn": "8400"}
+{"city": "g. Volgograd", "ip": "88.87.67.46", "median_rtt": "27.8136455", "lon": 44.550669493814823, "continent": "eu", "country": "ru", "lat": 48.77999688432709, "ixp": "MSK-IX Moscow", "asn": "39435"}
+{"city": "Kiev", "ip": "195.177.68.41", "median_rtt": "22.09686", "lon": 30.528673621196145, "continent": "eu", "country": "ua", "lat": 50.413845445220424, "ixp": "MSK-IX Moscow", "asn": "3252"}
+{"city": "Omsk", "ip": "109.194.120.30", "median_rtt": "55.755195", "lon": 73.256321611080239, "continent": "eu", "country": "ru", "lat": 55.021611455205843, "ixp": "MSK-IX Moscow", "asn": "41843"}
+{"city": "Salaspils", "ip": "195.122.18.249", "median_rtt": "24.8056375", "lon": 24.251492950618388, "continent": "eu", "country": "lv", "lat": 56.980873002153004, "ixp": "MSK-IX Moscow", "asn": "12578"}
+{"city": "Almaty", "ip": "91.185.5.142", "median_rtt": "59.8972475", "lon": 76.915037751674774, "continent": "as", "country": "kz", "lat": 42.967161245154657, "ixp": "MSK-IX Moscow", "asn": "41798"}
+{"city": "Yekaterinburg", "ip": "91.221.181.200", "median_rtt": "28.9021325", "lon": 60.618335613938328, "continent": "eu", "country": "ru", "lat": 56.86650506340429, "ixp": "MSK-IX Moscow", "asn": "13094"}
+{"city": "Kharkiv", "ip": "80.93.127.142", "median_rtt": "72.542011", "lon": 36.225787337267136, "continent": "eu", "country": "ua", "lat": 49.865245676033197, "ixp": "MSK-IX Moscow", "asn": "35320"}
+{"city": "Moscow", "ip": "62.140.239.244", "median_rtt": "2.647725", "lon": 37.652165538465212, "continent": "eu", "country": "ru", "lat": 55.641090684973044, "ixp": "MSK-IX Moscow", "asn": "28917"}
+{"city": "Moscow", "ip": "195.208.208.223", "median_rtt": "4.468993", "lon": 37.383966793709163, "continent": "eu", "country": "ru", "lat": 55.70572554263714, "ixp": "MSK-IX Moscow", "asn": "31133"}
+{"city": "Kazan", "ip": "37.230.146.1", "median_rtt": "15.719519", "lon": 49.174525275216737, "continent": "eu", "country": "ru", "lat": 55.801859639393051, "ixp": "MSK-IX Moscow", "asn": "62067"}
+{"city": "Kiev", "ip": "77.120.0.153", "median_rtt": "22.3023645", "lon": 30.450890722795581, "continent": "eu", "country": "ua", "lat": 50.5241796402739, "ixp": "MSK-IX Moscow", "asn": "25229"}
+{"city": "Sankt-Peterburg", "ip": "212.48.194.151", "median_rtt": "11.677186", "lon": 30.331604010921581, "continent": "eu", "country": "ru", "lat": 59.870899017892121, "ixp": "MSK-IX Moscow", "asn": "8997"}
+{"city": "Kiev", "ip": "195.69.84.58", "median_rtt": "23.063812", "lon": 30.520499691476548, "continent": "eu", "country": "ua", "lat": 50.444624287052825, "ixp": "MSK-IX Moscow", "asn": "29107"}
+{"city": "Salaspils", "ip": "81.198.165.169", "median_rtt": "30.057222", "lon": 24.134326675019455, "continent": "eu", "country": "lv", "lat": 56.927436958377271, "ixp": "MSK-IX Moscow", "asn": "12578"}
+{"city": "Abovyan", "ip": "109.68.121.219", "median_rtt": "35.9151435", "lon": 44.475739250954419, "continent": "as", "country": "am", "lat": 40.222853553062563, "ixp": "MSK-IX Moscow", "asn": "8226"}
+{"city": "Rostov-on-Don", "ip": "176.96.191.237", "median_rtt": "21.7662765", "lon": 39.650181637303966, "continent": "eu", "country": "ru", "lat": 47.252241247345587, "ixp": "MSK-IX Moscow", "asn": "52041"}
+{"city": "Kharkiv", "ip": "80.91.161.142", "median_rtt": "21.503236", "lon": 36.254570947538397, "continent": "eu", "country": "ua", "lat": 50.000509661945173, "ixp": "MSK-IX Moscow", "asn": "21219"}
+{"city": "Krasnoyarsk", "ip": "217.117.184.126", "median_rtt": "62.6442845", "lon": 92.884687393013991, "continent": "eu", "country": "ru", "lat": 55.8967534091421, "ixp": "MSK-IX Moscow", "asn": "16300"}
+{"city": "Sankt-Peterburg", "ip": "212.48.198.238", "median_rtt": "12.6957725", "lon": 30.330621699020867, "continent": "eu", "country": "ru", "lat": 59.927551205741047, "ixp": "MSK-IX Moscow", "asn": "8997"}
+{"city": "Vilnius", "ip": "82.135.182.2", "median_rtt": "27.18319", "lon": 25.28902274941445, "continent": "eu", "country": "lt", "lat": 54.701621497566549, "ixp": "MSK-IX Moscow", "asn": "8764"}
+{"city": "Kazan", "ip": "109.194.184.18", "median_rtt": "15.3154595", "lon": 49.171711968381878, "continent": "eu", "country": "ru", "lat": 55.768120614381672, "ixp": "MSK-IX Moscow", "asn": "41668"}
+{"city": "Moscow", "ip": "80.64.102.196", "median_rtt": "3.3131525", "lon": 37.726415505825976, "continent": "eu", "country": "ru", "lat": 55.732749540907889, "ixp": "MSK-IX Moscow", "asn": "20764"}
+{"city": "Warsaw", "ip": "193.111.37.26", "median_rtt": "35.54445", "lon": 20.939014750010173, "continent": "eu", "country": "pl", "lat": 52.212926755429272, "ixp": "MSK-IX Moscow", "asn": "24724"}
+{"city": "Moscow", "ip": "213.24.85.229", "median_rtt": "3.616513", "lon": 37.722257065168769, "continent": "eu", "country": "ru", "lat": 55.718472970929952, "ixp": "MSK-IX Moscow", "asn": "12389"}
+{"city": "Moscow", "ip": "46.151.158.234", "median_rtt": "2.8289825", "lon": 37.620118680608144, "continent": "eu", "country": "ru", "lat": 55.758719162355192, "ixp": "MSK-IX Moscow", "asn": "50473"}
+{"city": "Almaty", "ip": "91.185.5.5", "median_rtt": "60.287107", "lon": 76.911430804508186, "continent": "as", "country": "kz", "lat": 43.318989499029129, "ixp": "MSK-IX Moscow", "asn": "41798"}
+{"city": "Salaspils", "ip": "195.122.0.154", "median_rtt": "24.404435", "lon": 24.181652247001313, "continent": "eu", "country": "lv", "lat": 56.961235039231568, "ixp": "MSK-IX Moscow", "asn": "12578"}
+{"city": "Abovyan", "ip": "185.48.241.1", "median_rtt": "35.512711", "lon": 44.512952269100936, "continent": "as", "country": "am", "lat": 40.191723368548239, "ixp": "MSK-IX Moscow", "asn": "8932"}
+{"city": "Moscow", "ip": "213.248.7.54", "median_rtt": "3.3020165", "lon": 37.612000538251266, "continent": "eu", "country": "ru", "lat": 55.671046304462294, "ixp": "MSK-IX Moscow", "asn": "12695"}
+{"city": "Moscow", "ip": "178.210.32.57", "median_rtt": "2.993735", "lon": 37.618464894318571, "continent": "eu", "country": "ru", "lat": 55.612482736368712, "ixp": "MSK-IX Moscow", "asn": "43727"}
+{"city": "Voronezh", "ip": "109.106.130.97", "median_rtt": "11.99885", "lon": 39.187028990329857, "continent": "eu", "country": "ru", "lat": 51.451704613759865, "ixp": "MSK-IX Moscow", "asn": "43727"}
+{"city": "Riga", "ip": "194.19.226.114", "median_rtt": "27.114505", "lon": 24.127583482171612, "continent": "eu", "country": "lv", "lat": 56.960217236820988, "ixp": "MSK-IX Moscow", "asn": "5518"}
+{"city": "Kiev", "ip": "77.120.1.33", "median_rtt": "23.2200575", "lon": 30.511413039070309, "continent": "eu", "country": "ua", "lat": 50.430915838069041, "ixp": "MSK-IX Moscow", "asn": "25229"}
+{"city": "Novosibirsk", "ip": "109.194.88.30", "median_rtt": "47.064202", "lon": 82.972903531926377, "continent": "eu", "country": "ru", "lat": 54.997139984842413, "ixp": "MSK-IX Moscow", "asn": "43478"}
+{"city": "st petersburg", "ip": "212.232.64.2", "median_rtt": "10.868", "lon": 30.313573020717062, "continent": "eu", "country": "ru", "lat": 59.933320524374324, "ixp": "MSK-IX Moscow", "asn": "39102"}
+{"city": "Moscow", "ip": "62.140.245.164", "median_rtt": "3.1042945", "lon": 37.636958516501267, "continent": "eu", "country": "ru", "lat": 55.638759327577922, "ixp": "MSK-IX Moscow", "asn": "28917"}
+{"city": "Yekaterinburg", "ip": "87.251.181.49", "median_rtt": "33.527047", "lon": 60.646273295864965, "continent": "eu", "country": "ru", "lat": 56.825921029564313, "ixp": "MSK-IX Moscow", "asn": "5563"}
+{"city": "Magnitogorsk", "ip": "109.195.216.22", "median_rtt": "29.19744", "lon": 58.959852561469539, "continent": "eu", "country": "ru", "lat": 53.382803672751386, "ixp": "MSK-IX Moscow", "asn": "56377"}
+{"city": "Almaty", "ip": "91.185.5.54", "median_rtt": "56.860715", "lon": 76.899750103274684, "continent": "as", "country": "kz", "lat": 43.658439777250074, "ixp": "MSK-IX Moscow", "asn": "41798"}
+{"city": "Samara", "ip": "85.113.62.151", "median_rtt": "12.361", "lon": 50.241666111023818, "continent": "eu", "country": "ru", "lat": 53.226003080559501, "ixp": "MSK-IX Moscow", "asn": "34533"}
+{"city": "Rostov-on-Don", "ip": "128.0.90.182", "median_rtt": "21.03157", "lon": 39.651342427486391, "continent": "eu", "country": "ru", "lat": 47.243956308288396, "ixp": "MSK-IX Moscow", "asn": "52041"}
+{"city": "Kharkiv", "ip": "80.91.160.130", "median_rtt": "53.877405", "lon": 36.232550608299398, "continent": "eu", "country": "ua", "lat": 50.132659374011624, "ixp": "MSK-IX Moscow", "asn": "21219"}
+{"city": "Chessington", "ip": "124.6.36.33", "median_rtt": "56.1223795", "lon": 0.0055306365070827111, "continent": "eu", "country": "gb", "lat": 51.503373964213154, "ixp": "MSK-IX Moscow", "asn": "24482"}
+{"city": "Tyumen", "ip": "37.60.16.165", "median_rtt": "35.195143", "lon": 65.484703055088389, "continent": "eu", "country": "ru", "lat": 57.143407989714703, "ixp": "MSK-IX Moscow", "asn": "50923"}
+{"city": "False", "ip": "193.0.240.40", "median_rtt": "24.976565", "lon": 32.038440710021789, "continent": "eu", "country": "ua", "lat": 49.450559445045798, "ixp": "MSK-IX Moscow", "asn": "25133"}
+{"city": "london", "ip": "124.6.36.39", "median_rtt": "56.78", "lon": -0.062315825223319729, "continent": "eu", "country": "gb", "lat": 51.503500778133684, "ixp": "MSK-IX Moscow", "asn": "24482"}
+{"city": "Moscow", "ip": "81.200.12.210", "median_rtt": "3.46448", "lon": 37.384212878287315, "continent": "eu", "country": "ru", "lat": 55.831005274538036, "ixp": "MSK-IX Moscow", "asn": "29124"}
+{"city": "Moscow", "ip": "213.79.104.161", "median_rtt": "5.3579535", "lon": 37.783240814544321, "continent": "eu", "country": "ru", "lat": 55.946809341306817, "ixp": "MSK-IX Moscow", "asn": "8732"}
+{"city": "Moscow", "ip": "62.140.245.158", "median_rtt": "2.900395", "lon": 37.624774516211701, "continent": "eu", "country": "ru", "lat": 55.666347445255283, "ixp": "MSK-IX Moscow", "asn": "28917"}
+{"city": "False", "ip": "109.200.131.97", "median_rtt": "39.0681775", "lon": 34.110093269083663, "continent": "eu", "country": "ua", "lat": 44.928192044674326, "ixp": "MSK-IX Moscow", "asn": "6789"}
+{"city": "Krasnoyarsk", "ip": "217.117.184.249", "median_rtt": "61.03399", "lon": 92.868645496376516, "continent": "eu", "country": "ru", "lat": 55.942803246783953, "ixp": "MSK-IX Moscow", "asn": "16300"}
+{"city": "Abovyan", "ip": "185.48.241.57", "median_rtt": "33.737095", "lon": 44.51400237705024, "continent": "as", "country": "am", "lat": 40.197762972790699, "ixp": "MSK-IX Moscow", "asn": "8932"}
+{"city": "Samara", "ip": "85.113.62.125", "median_rtt": "18.686555", "lon": 50.242115024092946, "continent": "eu", "country": "ru", "lat": 53.209348332273223, "ixp": "MSK-IX Moscow", "asn": "34533"}
+{"city": "Samara", "ip": "85.113.62.127", "median_rtt": "12.438", "lon": 50.245018303207502, "continent": "eu", "country": "ru", "lat": 53.221412335118515, "ixp": "MSK-IX Moscow", "asn": "34533"}
+{"city": "Perm", "ip": "212.33.233.57", "median_rtt": "32.003815", "lon": 56.174553787946152, "continent": "eu", "country": "ru", "lat": 57.969378998105377, "ixp": "MSK-IX Moscow", "asn": "12768"}
+{"city": "Abovyan", "ip": "185.77.193.70", "median_rtt": "31.13511", "lon": 44.512600353412573, "continent": "as", "country": "am", "lat": 40.203073974047534, "ixp": "MSK-IX Moscow", "asn": "51090"}
+{"city": "Magnitogorsk", "ip": "109.195.216.30", "median_rtt": "30.56474", "lon": 58.973637644503768, "continent": "eu", "country": "ru", "lat": 53.348169981610788, "ixp": "MSK-IX Moscow", "asn": "56377"}
+{"city": "Voronezh", "ip": "178.210.33.245", "median_rtt": "15.7716515", "lon": 39.204498021596791, "continent": "eu", "country": "ru", "lat": 52.09608982116805, "ixp": "MSK-IX Moscow", "asn": "43727"}
+{"city": "Frankfurt", "ip": "212.200.5.77", "median_rtt": "49.2332855", "lon": 8.6162225564224606, "continent": "eu", "country": "de", "lat": 50.114223396441396, "ixp": "MSK-IX Moscow", "asn": "8400"}
+{"city": "Sofia", "ip": "185.44.116.231", "median_rtt": "71.0438545", "lon": 23.362951628888052, "continent": "eu", "country": "bg", "lat": 42.612454595504815, "ixp": "MSK-IX Moscow", "asn": "47872"}
+{"city": "Rostov-on-Don", "ip": "89.221.201.17", "median_rtt": "19.6674435", "lon": 39.767702056337932, "continent": "eu", "country": "ru", "lat": 47.307745091212624, "ixp": "MSK-IX Moscow", "asn": "41691"}
+{"city": "Samara", "ip": "85.113.62.149", "median_rtt": "18.439813", "lon": 50.230017811930537, "continent": "eu", "country": "ru", "lat": 53.209352310347626, "ixp": "MSK-IX Moscow", "asn": "34533"}
+{"city": "Omsk", "ip": "109.194.120.18", "median_rtt": "47.388595", "lon": 73.294776919751797, "continent": "eu", "country": "ru", "lat": 55.069036366428548, "ixp": "MSK-IX Moscow", "asn": "41843"}
+{"city": "Sankt-Peterburg", "ip": "91.192.191.150", "median_rtt": "10.468226", "lon": 30.464620394197905, "continent": "eu", "country": "ru", "lat": 59.94275192745085, "ixp": "MSK-IX Moscow", "asn": "42518"}
+{"city": "Riga", "ip": "78.154.154.89", "median_rtt": "26.6207755", "lon": 24.101233290268613, "continent": "eu", "country": "lv", "lat": 56.923231960741617, "ixp": "MSK-IX Moscow", "asn": "5518"}
+{"city": "Warsaw", "ip": "212.91.9.73", "median_rtt": "36.117128", "lon": 20.919428314547051, "continent": "eu", "country": "pl", "lat": 52.272881301389816, "ixp": "MSK-IX Moscow", "asn": "24724"}
+{"city": "Almaty", "ip": "91.185.5.73", "median_rtt": "58.1647825", "lon": 76.908897481776435, "continent": "as", "country": "kz", "lat": 43.195496893025755, "ixp": "MSK-IX Moscow", "asn": "41798"}
+{"city": "g. Troitsk", "ip": "178.215.66.145", "median_rtt": "97.7788415", "lon": 37.281541758745277, "continent": "eu", "country": "ru", "lat": 55.498911700367508, "ixp": "MSK-IX Moscow", "asn": "49342"}
+{"city": "False", "ip": "80.245.112.11", "median_rtt": "38.690861", "lon": 34.094791692762165, "continent": "eu", "country": "ua", "lat": 44.933650827129419, "ixp": "MSK-IX Moscow", "asn": "6789"}
+{"city": "Vilnius", "ip": "82.135.187.68", "median_rtt": "41.500424", "lon": 25.301469435312736, "continent": "eu", "country": "lt", "lat": 54.689506100921989, "ixp": "MSK-IX Moscow", "asn": "8764"}
+{"city": "riga", "ip": "78.154.153.166", "median_rtt": "23.97", "lon": 24.098725256131591, "continent": "eu", "country": "lv", "lat": 56.929802269536815, "ixp": "MSK-IX Moscow", "asn": "5518"}
+{"city": "Riga", "ip": "80.232.146.1", "median_rtt": "24.4301925", "lon": 24.20795157729502, "continent": "eu", "country": "lv", "lat": 56.984486311694766, "ixp": "MSK-IX Moscow", "asn": "12578"}
+{"city": "Abovyan", "ip": "185.48.240.21", "median_rtt": "33.6844075", "lon": 44.498368251811506, "continent": "as", "country": "am", "lat": 40.196924367262952, "ixp": "MSK-IX Moscow", "asn": "8932"}
+{"city": "Samara", "ip": "188.234.157.109", "median_rtt": "28.060038", "lon": 50.217197757533647, "continent": "eu", "country": "ru", "lat": 53.217691596029944, "ixp": "MSK-IX Moscow", "asn": "9049"}
+{"city": "Almaty", "ip": "91.185.5.190", "median_rtt": "57.992655", "lon": 76.931239984196296, "continent": "as", "country": "kz", "lat": 43.642819246157707, "ixp": "MSK-IX Moscow", "asn": "41798"}
+{"city": "Kharkiv", "ip": "217.20.161.85", "median_rtt": "16.4175475", "lon": 36.220276894000904, "continent": "eu", "country": "ua", "lat": 49.774442782932212, "ixp": "MSK-IX Moscow", "asn": "15772"}
+{"city": "Abovyan", "ip": "185.48.241.73", "median_rtt": "34.4321625", "lon": 44.52269476983475, "continent": "as", "country": "am", "lat": 40.199795688152257, "ixp": "MSK-IX Moscow", "asn": "8932"}
+{"city": "Kharkiv", "ip": "217.20.161.6", "median_rtt": "19.744615", "lon": 36.240291977573484, "continent": "eu", "country": "ua", "lat": 49.920935621365125, "ixp": "MSK-IX Moscow", "asn": "15772"}
+{"city": "Moscow", "ip": "80.77.167.16", "median_rtt": "3.272523", "lon": 37.61200819691971, "continent": "eu", "country": "ru", "lat": 55.666129240839204, "ixp": "MSK-IX Moscow", "asn": "28917"}
+{"city": "Krasnodar", "ip": "46.29.8.1", "median_rtt": "24.4826925", "lon": 38.989726614651232, "continent": "eu", "country": "ru", "lat": 44.974148364539786, "ixp": "MSK-IX Moscow", "asn": "197204"}
