@@ -7,7 +7,7 @@ from remote_peering import models
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Member
-        fields = ('id', 'created_at')
+        fields = ('id', 'name', 'created_at')
 
 
 class AsSerializer(serializers.ModelSerializer):
