@@ -43,12 +43,12 @@ class Ip(models.Model):
     member = models.ForeignKey(Member)
     locations = models.ManyToManyField(Location)
 
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField()
 
 
 class IpMetric(models.Model):
     ip = models.ForeignKey(Ip)
     median_rtt = models.FloatField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField()
 
 

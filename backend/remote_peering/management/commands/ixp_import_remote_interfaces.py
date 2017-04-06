@@ -1,4 +1,6 @@
 
+from __future__ import unicode_literals
+
 from django.core.management.base import BaseCommand
 from django.utils import timezone
 
@@ -20,7 +22,7 @@ class Command(BaseCommand):
         """Read interfaces file"""
         with open(filename) as f:
             line = f.readlines()
-            return (json.loads(l) for l in line)
+            return (json.loads(l.decode('utf8')) for l in line)
 
 
     def _parse_filename(self, filename):
@@ -57,16 +59,8 @@ class Command(BaseCommand):
 
     def _import_ixp(self, row):
         """Get or create the required IXP"""
-        # Get IXP location
-        ixp_location, _ = models.Location.objects.get_or_create(
-            city=row['ixp_city'],
-            country=row['ixp_country'],
-            continent=row['ixp_continent'])
-
-        ixp, _ = models.Ixp.objects.get_or_create(name=row['ixp'],
-                                                  peeringdb_id=row['ixp_peeringdb_id'])
-        ixp.locations.add(ixp_location)
-        return ixp
+        # Get IXP. The list of IXPs should be imported.
+        return models.Ixp.objects.get(name=row['ixp'])
 
 
     def _import_member(self, row):
@@ -80,7 +74,7 @@ class Command(BaseCommand):
 
     def _import_ip(self, row, date):
         """Get or create ip record"""
-        member = _import_member(row)
+        member = self._import_member(row)
         ip, _ = models.Ip.objects.get_or_create(address=row['ip'],
                                                 version=4,
                                                 member=member,
@@ -101,7 +95,16 @@ class Command(BaseCommand):
 
     def _import_data(self, row, date):
         """Store row in database, create objects if required"""
-        ixp = self._import_ixp(row)
+        try:
+            metric = self._import_ip_metric(row, date)
+            print("Imported: {} for {}, med. rtt: {}".format(
+                metric.ip.address,
+                metric.created_at,
+                metric.median_rtt,
+            ))
+        except Exception as e:
+            print("Could not import IpMetric:")
+            print(e)
 
 
     def handle(self, *args, **options):
