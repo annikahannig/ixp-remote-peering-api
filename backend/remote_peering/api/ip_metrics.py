@@ -29,6 +29,12 @@ class IpMetricsViewSet(viewsets.ViewSet):
         median_rtt_lte = request.query_params.get('median_rtt_lte')
         median_rtt_gte = request.query_params.get('median_rtt_gte')
 
+        start = request.query_params.get('start')
+        start = int(start) if start else 0
+
+        limit = request.query_params.get('limit')
+        end = int(limit) + start if limit else None
+
         query_list = []
 
         if created_at:
@@ -49,14 +55,16 @@ class IpMetricsViewSet(viewsets.ViewSet):
         # Done. Combine all query parameters
         if query_list:
             entries = models.IpMetric.objects\
-                .filter(reduce(operator.and_, query_list))
+                .filter(reduce(operator.and_, query_list))[start:end]
         else:
-            entries = models.IpMetric.objects.all()
+            entries = models.IpMetric.objects.all()[start:end]
 
         entries = serializers.IpMetricSerializer(entries, many=True).data
 
         return response.Response({
             "status": 200,
+            "start": int(start),
+            "limit": int(limit) if limit else 0,
             "count": len(entries),
             "data": entries
         })

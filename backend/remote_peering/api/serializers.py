@@ -67,6 +67,6 @@ class IpMetricSerializer(serializers.ModelSerializer):
         fields = ('id', 'ip', 'median_rtt', 'created_at')
         depth = 2
 
+
 class StatusSerializer(serializers.Serializer):
     last_run = serializers.DateTimeField()
-

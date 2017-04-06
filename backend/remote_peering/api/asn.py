@@ -4,8 +4,8 @@ from rest_framework import viewsets, response
 
 from remote_peering import models
 from remote_peering.api import serializers
-
 from remote_peering import utils
+
 
 class AsnViewSet(viewsets.ViewSet):
     """
@@ -15,18 +15,25 @@ class AsnViewSet(viewsets.ViewSet):
 
     * `?number=<asn>[,<asn>...]`
     """
-
     def list(self, request):
         asns = utils.params_list(request, 'number')
+        
+        start = request.query_params.get('start')
+        start = int(start) if start else 0
+
+        limit = request.query_params.get('limit')
+        end = int(limit) + start if limit else None
+
         if asns:
-            results = models.As.objects.filter(number__in=asns)
+            entries = models.As.objects.filter(number__in=asns)
         else:
-            results = models.As.objects.all()
+            entries = models.As.objects.all()[start:end]
+        entries = serializers.AsSerializer(entries, many=True).data
 
-
-        entries = serializers.AsSerializer(results, many=True).data
         return response.Response({
             "status": 200,
+            "start": int(start),
+            "limit": int(limit) if limit else 0,
             "count": len(entries),
             "data": entries
         })
