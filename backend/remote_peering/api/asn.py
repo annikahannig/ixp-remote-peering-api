@@ -18,6 +18,7 @@ class AsnViewSet(viewsets.ViewSet):
 
         return response.Response({
             "status": 200,
+            "count": len(entries),
             "data": entries
         })
 

@@ -38,9 +38,10 @@ class IpMetricsViewSet(viewsets.ViewSet):
         else:
             entries = models.IpMetric.objects.all()
 
-        entries = serializers.IpMetricSerializer(entries, many=True)
+        entries = serializers.IpMetricSerializer(entries, many=True).data
 
         return response.Response({
             "status": 200,
-            "data": entries.data
+            "count": len(entries),
+            "data": entries
         })
