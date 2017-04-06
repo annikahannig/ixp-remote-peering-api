@@ -17,9 +17,11 @@ class IxpViewSet(viewsets.ViewSet):
             })
 
         if name is not None:
-            entries = []
+            entries = models.Ixp.objects.filter(name__icontains=name)
+            entries = serializers.IxpSerializer(entries, many=True).data
         elif peering_id is not None:
-            entries = []
+            entries = models.Ixp.objects.get(peeringdb_id=peering_id)
+            entries = serializers.IxpSerializer(entries).data
         else:
             entries = models.Ixp.objects.all()
             entries = serializers.IxpSerializer(entries, many=True).data
