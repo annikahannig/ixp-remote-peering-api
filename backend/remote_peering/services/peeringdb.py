@@ -11,7 +11,8 @@ class PeeringDBClient:
     A client to the PeeringDB API.
     """
 
-    def __init__(self, cache_ttl=800, cache_size=8192):
+    def __init__(self, cache_ttl=864000, cache_size=8192):
+        """Keep cache for 10d"""
         self._api_base = "https://peeringdb.com/api"
         self._session = requests.Session()
         self._cache = caches["default"]
