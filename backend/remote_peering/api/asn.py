@@ -17,7 +17,7 @@ class AsnViewSet(viewsets.ViewSet):
     """
     def list(self, request):
         asns = utils.params_list(request, 'number')
-        
+
         start = int(request.query_params.get('start', 0))
         limit = request.query_params.get('limit', None)
 
@@ -40,7 +40,7 @@ class AsnViewSet(viewsets.ViewSet):
     def retrieve(self, request, pk=None):
         try:
             asn = models.As.objects.get(pk=pk)
-            asn = [serializers.AsSerializer(asn).data]
+            asn = serializers.AsSerializer(asn).data
         except MultipleObjectsReturned:
             return response.Response({
                 "status": 400,
