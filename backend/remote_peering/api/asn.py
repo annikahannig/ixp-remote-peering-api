@@ -7,12 +7,18 @@ from django.core.exceptions import *
 
 class AsnViewSet(viewsets.ViewSet):
     def list(self, request):
-        entries = models.As.objects.all()
-        entries = serializers.AsSerializer(entries, many=True)
+        number = request.query_params.get('number')
+
+        if number is not None:
+            entries = models.As.objects.get(number=number)
+            entries = serializers.AsSerializer(entries).data
+        else:
+            entries = models.As.objects.all()
+            entries = serializers.AsSerializer(entries, many=True).data
 
         return response.Response({
             "status": 200,
-            "data": entries.data
+            "data": entries
         })
 
     def retrieve(self, request, pk=None):
