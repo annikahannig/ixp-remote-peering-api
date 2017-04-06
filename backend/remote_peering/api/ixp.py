@@ -1,14 +1,31 @@
 
+
 from rest_framework import viewsets, response
 from remote_peering import models
 from remote_peering.api import serializers
+
+from django.db.models import Q
 from django.core.exceptions import *
 
+import operator
 
 class IxpViewSet(viewsets.ViewSet):
+    """
+    Retrieve and filter a list of IXPs and their members.
+
+    ### Query Parameters:
+    * `?name=<string>` Filter by IXP name
+    * `?peeringdb_id=<int>` Filter by PeeringDB Id of IXP
+    * `?member=<string>` Filter by name of member (contains, case insensitive)
+
+    ###
+    * `?start=<int>`
+    * `?limit=<int>`
+    """
+
     def list(self, request):
-        name = request.query_params.get('name')
-        peering_id = request.query_params.get('peering_id')
+        ixp_name = request.query_params.get('name')
+        peeringdb_id = request.query_params.get('peeringdb_id')
 
         start = request.query_params.get('start')
         start = int(start) if start else 0
@@ -16,23 +33,26 @@ class IxpViewSet(viewsets.ViewSet):
         limit = request.query_params.get('limit')
         end = int(limit) + start if limit else None
 
-        if name is not None and peering_id is not None:
-            return response.Response({
-                "status": 400,
-                "message": "Please specify either a name or a peering db id"
-            }, 400)
+        member_name = request.query_params.get('member')
 
-        objects = models.Ixp.objects
-        if name is not None:
-            entries = objects.filter(name__icontains=name)[start:end]
-            entries = serializers.IxpSerializer(entries, many=True).data
-        elif peering_id is not None:
-            entries = objects.get(peeringdb_id=peering_id)[start:end]
-            entries = serializers.IxpSerializer(entries).data
+        filters = []
+        if ixp_name:
+            filters.append(Q(name__icontains=ixp_name))
+
+        if peeringdb_id:
+            filters.append(Q(peeringdb_id=peeringdb_id))
+
+        if member_name:
+            filters.append(Q(members__name__icontains=member_name))
+
+
+        if filters:
+            ixp_filter = reduce(operator.and_, filters)
+            ixps = models.Ixp.objects.filter(ixp_filter)
         else:
-            entries = objects.all()[start:end]
-            entries = serializers.IxpSerializer(entries, many=True).data
+            ixps = models.Ixp.objects.all()
 
+        entries = serializers.IxpSerializer(ixps[start:end], many=True).data
         return response.Response({
             "status": 200,
             "start": int(start),
@@ -40,6 +60,7 @@ class IxpViewSet(viewsets.ViewSet):
             "count": len(entries),
             "data": entries
         })
+
 
     def retrieve(self, request, pk=None):
         try:

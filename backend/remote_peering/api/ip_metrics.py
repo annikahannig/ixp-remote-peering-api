@@ -19,6 +19,10 @@ class IpMetricsViewSet(viewsets.ViewSet):
     * `?ip=<ip address>[,<ip address>...]`
     * `?asn=<as number>[,<as number>...]`
     * `?median_rtt_<lte|gte>=<float>`
+
+    ###
+    * `?limit=<number>`
+    * `?start=<number>`
     """
 
 
