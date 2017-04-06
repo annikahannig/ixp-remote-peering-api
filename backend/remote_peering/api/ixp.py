@@ -10,24 +10,33 @@ class IxpViewSet(viewsets.ViewSet):
         name = request.query_params.get('name')
         peering_id = request.query_params.get('peering_id')
 
+        start = request.query_params.get('start')
+        start = int(start) if start else 0
+
+        limit = request.query_params.get('limit')
+        end = int(limit) + start if limit else None
+
         if name is not None and peering_id is not None:
             return response.Response({
                 "status": 400,
                 "message": "Please specify either a name or a peering db id"
             }, 400)
 
+        objects = models.Ixp.objects
         if name is not None:
-            entries = models.Ixp.objects.filter(name__icontains=name)
+            entries = objects.filter(name__icontains=name)[start:end]
             entries = serializers.IxpSerializer(entries, many=True).data
         elif peering_id is not None:
-            entries = models.Ixp.objects.get(peeringdb_id=peering_id)
+            entries = objects.get(peeringdb_id=peering_id)[start:end]
             entries = serializers.IxpSerializer(entries).data
         else:
-            entries = models.Ixp.objects.all()
+            entries = objects.all()[start:end]
             entries = serializers.IxpSerializer(entries, many=True).data
 
         return response.Response({
             "status": 200,
+            "start": int(start),
+            "limit": int(limit) if limit else 0,
             "count": len(entries),
             "data": entries
         })

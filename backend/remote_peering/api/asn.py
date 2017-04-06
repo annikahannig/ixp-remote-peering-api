@@ -9,15 +9,23 @@ class AsnViewSet(viewsets.ViewSet):
     def list(self, request):
         number = request.query_params.get('number')
 
+        start = request.query_params.get('start')
+        start = int(start) if start else 0
+
+        limit = request.query_params.get('limit')
+        end = int(limit) + start if limit else None
+
         if number is not None:
-            entries = models.As.objects.get(number=number)
+            entries = models.As.objects.get(number=number)[start:end]
             entries = serializers.AsSerializer(entries).data
         else:
-            entries = models.As.objects.all()
+            entries = models.As.objects.all()[start:end]
             entries = serializers.AsSerializer(entries, many=True).data
 
         return response.Response({
             "status": 200,
+            "start": int(start),
+            "limit": int(limit) if limit else 0,
             "count": len(entries),
             "data": entries
         })
