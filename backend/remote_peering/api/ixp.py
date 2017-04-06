@@ -10,10 +10,9 @@ class IxpViewSet(viewsets.ViewSet):
         name = request.query_params.get('name')
         peering_id = request.query_params.get('peering_id')
 
-        start = request.query_params.get('start')
-        start = int(start) if start else 0
+        start = int(request.query_params.get('start', 0))
+        limit = request.query_params.get('limit', None)
 
-        limit = request.query_params.get('limit')
         end = int(limit) + start if limit else None
 
         if name is not None and peering_id is not None:
@@ -35,7 +34,7 @@ class IxpViewSet(viewsets.ViewSet):
 
         return response.Response({
             "status": 200,
-            "start": int(start),
+            "start": start,
             "limit": int(limit) if limit else 0,
             "count": len(entries),
             "data": entries

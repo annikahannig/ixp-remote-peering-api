@@ -18,10 +18,9 @@ class AsnViewSet(viewsets.ViewSet):
     def list(self, request):
         asns = utils.params_list(request, 'number')
         
-        start = request.query_params.get('start')
-        start = int(start) if start else 0
+        start = int(request.query_params.get('start', 0))
+        limit = request.query_params.get('limit', None)
 
-        limit = request.query_params.get('limit')
         end = int(limit) + start if limit else None
 
         if asns:
@@ -32,7 +31,7 @@ class AsnViewSet(viewsets.ViewSet):
 
         return response.Response({
             "status": 200,
-            "start": int(start),
+            "start": start,
             "limit": int(limit) if limit else 0,
             "count": len(entries),
             "data": entries

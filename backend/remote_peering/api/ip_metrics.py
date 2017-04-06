@@ -21,7 +21,6 @@ class IpMetricsViewSet(viewsets.ViewSet):
     * `?median_rtt_<lte|gte>=<float>`
     """
 
-
     def list(self, request):
         created_at = request.query_params.get('date')
         ip_address = utils.params_list(request, 'ip')
@@ -29,10 +28,9 @@ class IpMetricsViewSet(viewsets.ViewSet):
         median_rtt_lte = request.query_params.get('median_rtt_lte')
         median_rtt_gte = request.query_params.get('median_rtt_gte')
 
-        start = request.query_params.get('start')
-        start = int(start) if start else 0
+        start = int(request.query_params.get('start', 0))
+        limit = request.query_params.get('limit', None)
 
-        limit = request.query_params.get('limit')
         end = int(limit) + start if limit else None
 
         query_list = []
@@ -63,7 +61,7 @@ class IpMetricsViewSet(viewsets.ViewSet):
 
         return response.Response({
             "status": 200,
-            "start": int(start),
+            "start": start,
             "limit": int(limit) if limit else 0,
             "count": len(entries),
             "data": entries
