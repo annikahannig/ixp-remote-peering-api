@@ -46,9 +46,18 @@ class Ip(models.Model):
     created_at = models.DateTimeField()
 
 
+class IpMetricManager(models.Manager):
+
+    def get_queryset(self):
+        qs = super(IpMetricManager, self).get_queryset()
+        qs = qs.prefetch_related("ip", "ip__member", "ip__locations")
+        return qs
+
+
 class IpMetric(models.Model):
     ip = models.ForeignKey(Ip)
     median_rtt = models.FloatField()
     created_at = models.DateTimeField()
 
+    objects = IpMetricManager()
 

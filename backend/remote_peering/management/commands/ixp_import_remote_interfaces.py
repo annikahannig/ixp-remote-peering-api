@@ -74,6 +74,7 @@ class Command(BaseCommand):
 
     def _import_ip(self, row, date):
         """Get or create ip record"""
+        location = self._import_location(row)
         member = self._import_member(row)
         ip, _ = models.Ip.objects.get_or_create(address=row['ip'],
                                                 version=4,
@@ -81,6 +82,7 @@ class Command(BaseCommand):
                                                 longitude=row['lon'],
                                                 latitude=row['lat'],
                                                 created_at=date)
+        ip.locations.add(location)
         return ip
 
 
