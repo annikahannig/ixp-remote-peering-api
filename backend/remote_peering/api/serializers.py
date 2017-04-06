@@ -32,8 +32,15 @@ class LocationSerializer(serializers.ModelSerializer):
         fields = ('id', 'continent', 'country', 'city')
 
 
+class IpSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Ip
+        fields = ('id', 'address', 'version', 'longitude', 'latitude', 'member',
+                  'locations', 'created_at')
+
+
 class IpMetricSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.IpMetric
-        fields = ('id', 'address', 'version', 'longitude', 'latitude', 'member',
-                  'locations', 'created_at')
+        fields = ('id', 'ip', 'median_rtt', 'created_at')
+        depth = 1
