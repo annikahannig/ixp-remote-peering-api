@@ -3,7 +3,6 @@ from rest_framework import viewsets, response
 from remote_peering import models
 from remote_peering.api import serializers
 from django.core.exceptions import *
-import numbers
 
 
 class IxpViewSet(viewsets.ViewSet):
@@ -21,14 +20,8 @@ class IxpViewSet(viewsets.ViewSet):
             entries = models.Ixp.objects.filter(name__icontains=name)
             entries = serializers.IxpSerializer(entries, many=True).data
         elif peering_id is not None:
-            if isinstance(peering_id, numbers.Integral):
-                entries = models.Ixp.objects.get(peeringdb_id=peering_id)
-                entries = serializers.IxpSerializer(entries).data
-            else:
-                return response.Response({
-                    "status": 400,
-                    "message": "The PeeringDB id is an integer value"
-                }, 400)
+            entries = models.Ixp.objects.get(peeringdb_id=peering_id)
+            entries = serializers.IxpSerializer(entries).data
         else:
             entries = models.Ixp.objects.all()
             entries = serializers.IxpSerializer(entries, many=True).data

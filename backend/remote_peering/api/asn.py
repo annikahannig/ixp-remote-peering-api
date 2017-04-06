@@ -3,7 +3,6 @@ from rest_framework import viewsets, response
 from remote_peering import models
 from remote_peering.api import serializers
 from django.core.exceptions import *
-import numbers
 
 
 class AsnViewSet(viewsets.ViewSet):
@@ -11,14 +10,8 @@ class AsnViewSet(viewsets.ViewSet):
         number = request.query_params.get('number')
 
         if number is not None:
-            if isinstance(number, numbers.Integral):
-                entries = models.As.objects.get(number=number)
-                entries = serializers.AsSerializer(entries).data
-            else:
-                return response.Response({
-                    "status": 400,
-                    "message": "The AS Number is an integer value"
-                }, 400)
+            entries = models.As.objects.get(number=number)
+            entries = serializers.AsSerializer(entries).data
         else:
             entries = models.As.objects.all()
             entries = serializers.AsSerializer(entries, many=True).data
