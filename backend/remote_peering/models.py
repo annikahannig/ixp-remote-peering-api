@@ -61,6 +61,9 @@ class Ip(models.Model):
     member = models.ForeignKey(Member)
     locations = models.ManyToManyField(Location)
 
+    num_paths = models.IntegerField(null=True)
+    num_peerings = models.IntegerField(null=True)
+
     created_at = models.DateTimeField()
 
 
