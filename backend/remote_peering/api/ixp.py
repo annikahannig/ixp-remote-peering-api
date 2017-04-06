@@ -28,13 +28,14 @@ class IxpViewSet(viewsets.ViewSet):
 
         return response.Response({
             "status": 200,
+            "count": len(entries),
             "data": entries
         })
 
     def retrieve(self, request, pk=None):
         try:
             ixp = models.Ixp.objects.get(pk=pk)
-            ixp = serializers.IxpSerializer(ixp).data
+            ixp = [serializers.IxpSerializer(ixp).data]
         except MultipleObjectsReturned:
             return response.Response({
                 "status": 400,

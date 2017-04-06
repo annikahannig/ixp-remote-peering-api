@@ -25,13 +25,14 @@ class AsnViewSet(viewsets.ViewSet):
         entries = serializers.AsSerializer(results, many=True).data
         return response.Response({
             "status": 200,
+            "count": len(entries),
             "data": entries
         })
 
     def retrieve(self, request, pk=None):
         try:
             asn = models.As.objects.get(pk=pk)
-            asn = serializers.AsSerializer(asn).data
+            asn = [serializers.AsSerializer(asn).data]
         except MultipleObjectsReturned:
             return response.Response({
                 "status": 400,
