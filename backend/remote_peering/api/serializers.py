@@ -43,4 +43,4 @@ class IpMetricSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.IpMetric
         fields = ('id', 'ip', 'median_rtt', 'created_at')
-        depth = 1
+        depth = 2
