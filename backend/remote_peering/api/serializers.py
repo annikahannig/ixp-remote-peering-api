@@ -4,14 +4,29 @@ from rest_framework import serializers
 from remote_peering import models
 
 
+class MemberAsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.As
+        fields = ('id', 'number', 'created_at')
+        depth = 1
+
+
 class MemberSerializer(serializers.ModelSerializer):
+    asn = MemberAsSerializer()
+
+    class Meta:
+        model = models.Member
+        fields = ('id', 'name', 'asn')
+
+
+class AsMemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Member
         fields = ('id', 'name')
 
 
 class AsSerializer(serializers.ModelSerializer):
-    member = MemberSerializer(source='member_set', many=True)
+    member = AsMemberSerializer(source='member_set', many=True)
 
     class Meta:
         model = models.As
