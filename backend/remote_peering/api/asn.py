@@ -1,26 +1,32 @@
 
+from django.core.exceptions import *
 from rest_framework import viewsets, response
+
 from remote_peering import models
 from remote_peering.api import serializers
-from django.core.exceptions import *
+from remote_peering import utils
 
 
 class AsnViewSet(viewsets.ViewSet):
-    def list(self, request):
-        number = request.query_params.get('number')
+    """
+    Retrieve ASNs - Supported QueryParameters:
 
+        number=<asn>[,<asn>...]
+    """
+    def list(self, request):
+        asns = utils.params_list(request, 'number')
+        
         start = request.query_params.get('start')
         start = int(start) if start else 0
 
         limit = request.query_params.get('limit')
         end = int(limit) + start if limit else None
 
-        if number is not None:
-            entries = models.As.objects.get(number=number)[start:end]
-            entries = serializers.AsSerializer(entries).data
+        if asns:
+            entries = models.As.objects.filter(number__in=asns)
         else:
             entries = models.As.objects.all()[start:end]
-            entries = serializers.AsSerializer(entries, many=True).data
+        entries = serializers.AsSerializer(entries, many=True).data
 
         return response.Response({
             "status": 200,
