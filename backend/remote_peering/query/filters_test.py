@@ -26,20 +26,20 @@ def test_filters_whitelist():
     }
 
     schema = {
-        'foo': (float, ),
-        'foos': ([int], ),
-        'bar': (str, 'icontains'),
-        'baz': (int, 'lt'),
+        'foo': ('foo', float, ),
+        'foos': ('foo', [int], ),
+        'bar': ('bar', str, 'icontains'),
+        'baz': ('baz', int, 'lt'),
     }
 
     whitelist_params = filters.whitelist_params(params, schema)
 
     assert 'bar__baz' not in whitelist_params.keys()
     assert 'bar__icontains' in whitelist_params.keys()
-    assert 'foos__in' in whitelist_params.keys()
+    assert 'foo__in' in whitelist_params.keys()
 
     assert whitelist_params['foo'] == 42
-    assert whitelist_params['foos__in'] == [23, 42]
+    assert whitelist_params['foo__in'] == [23, 42]
     assert whitelist_params['bar__icontains'] == 'test'
 
     assert whitelist_params['baz'] == 42
@@ -55,18 +55,18 @@ def test_date_parsing():
     }
 
     schema = {
-        'foo': (datetime, 'lt', 'lte'),
-        'bar_start': (range, datetime, 'gt'),
-        'bar_end': (range, datetime, 'lte'),
+        'foo': ('foo', datetime, 'lt', 'lte'),
+        'bar_start': ('bar', range, datetime, 'gt'),
+        'bar_end': ('bar', range, datetime, 'lte'),
     }
 
     whitelist_params = filters.whitelist_params(params, schema)
 
     assert whitelist_params['foo'] == timezone.utc.localize(
         datetime(2016, 2, 15))
-    assert whitelist_params['bar_start__gt'] == timezone.utc.localize(
+    assert whitelist_params['bar__gt'] == timezone.utc.localize(
         datetime(2016, 10, 15, 23, 15, 10))
-    assert whitelist_params['bar_end__lte'] == timezone.utc.localize(
+    assert whitelist_params['bar__lte'] == timezone.utc.localize(
         datetime(2016, 11, 15, 23, 15, 10))
 
 
@@ -79,17 +79,17 @@ def test_from_query_params():
     }
 
     schema = {
-        'foo': (float, ),
-        'foos': ([int], ),
+        'foo': ('foo', float, ),
+        'foos': ('foo', [int], ),
     }
 
     f = filters.filters_from_query_params(params, schema)
-    assert str(f) == str(Q(**{'foo': 42.0}) & Q(**{'foos__in': [23, 42]}))
+    assert str(f) == str(Q(**{'foo': 42.0}) & Q(**{'foo__in': [23, 42]}))
 
 
 def test_empty_params():
     params = {}
-    schema = { 'foo': (int, ) }
+    schema = { 'foo': ('foo', int, ) }
 
     f = filters.filters_from_query_params(params, schema)
 
