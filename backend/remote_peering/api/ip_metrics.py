@@ -46,11 +46,11 @@ class IpMetricsViewSet(viewsets.ViewSet):
             'date_start': ('created_at', range, datetime, 'gt' ),
             'date_end': ('created_at', range, datetime, 'lte' ),
 
-            'ip': ('ip', str, 'contains'),
-            'ips': ('ip', [str], ),
+            'ip': ('ip__address', str, 'contains'),
+            'ips': ('ip__address', [str], ),
 
-            'asn': ('asn', int, ),
-            'asns': ('asns', [int], ),
+            'asn': ('ip__member__asn__number', int, ),
+            'asns': ('ip__member__asn__number', [int], ),
 
             'median_rtt': ('median_rtt', float, 'lt', 'lte', 'gt', 'gte')
         })
