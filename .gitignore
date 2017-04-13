@@ -5,6 +5,7 @@
 
 *.pyc
 __pycache__/
+.cache/
 
 venv/
 
