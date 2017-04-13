@@ -1,12 +1,14 @@
 
 from rest_framework import viewsets, response
 
-from remote_peering import models, utils
+from remote_peering import models, utils, query
 from remote_peering.api import serializers
 
 from django.db.models import Q
 
 import operator
+
+from datetime import datetime
 
 
 class IpMetricsViewSet(viewsets.ViewSet):
@@ -38,10 +40,25 @@ class IpMetricsViewSet(viewsets.ViewSet):
         date_year = request.query_params.get('year')
 
 
-        ip_address = utils.params_list(request, 'ip')
+        ip_address = query.params_list(request, 'ip')
         asn = utils.params_list(request,'asn')
         median_rtt_lte = request.query_params.get('median_rtt_lte')
         median_rtt_gte = request.query_params.get('median_rtt_gte')
+
+        filters = utils.filters_from_query_params(request.query_params, {
+            'date': (datetime,),
+            'date_start': (datetime, 'lt','lte', 'gt', 'gte'),
+            'date_end': (datetime, 'lt', 'lte', 'gt', 'gte'),
+
+            'ips': ([str], ),
+            'ip':, (str, 'contains'),
+
+            'asns': ([int], ),
+            'asn': (int, ),
+
+
+            'median_rtt', (float, 'lt', 'lte', 'gt', 'gte')
+        })
 
         # Limiting
         start = int(request.query_params.get('start', 0))
