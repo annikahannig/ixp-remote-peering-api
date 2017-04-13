@@ -16,15 +16,22 @@ class IpMetricsViewSet(viewsets.ViewSet):
     Retrieve and filter IP metrics.
 
     ### Date Querying
-    * `?date=<date>` e.g. 2016-08-01T00:00:00Z
-    * `?day=<1-31>`
-    * `?month=<1-12>`
-    * `?year=<yyyy>`
+    * `?date=<date>` e.g. 2016-08-01T00:00:00Z or 2016-08-01
+    * `?date__lt=<date>`
+    * `?date__lte=<date>`
+    * `?date__gt=<date>`
+    * `?date__gte=<date>`
+
+    ### Date range querying
+    * `?date_start=<date>` Items with x > date)
+    * `?date_end=<date>` Items with x <= date
 
     ### Query Parameters
-    * `?ip=<ip address>[,<ip address>...]`
-    * `?asn=<as number>[,<as number>...]`
-    * `?median_rtt_<lte|gte>=<float>`
+    * `?ip=<ip address>`
+    * `?ips=<ip address>[,<ip address>...]`
+    * `?asn=<as number>`
+    * `?asns=<as_number>[,<as number>...]`
+    * `?median_rtt__<lt|lte|gt|gte>=<float>`
 
     ### Pagination
     * `?limit=<number>`
@@ -33,31 +40,19 @@ class IpMetricsViewSet(viewsets.ViewSet):
 
     def list(self, request):
 
-        # Date filtering
-        created_at = request.query_params.get('date')
-        date_day = request.query_params.get('day')
-        date_month = request.query_params.get('month')
-        date_year = request.query_params.get('year')
+        # Query Schema
+        filters = query.filters_from_query_params(request.query_params, {
+            'date': (datetime, 'lt', 'lte', 'gt', 'gte'),
+            'date_start': (range, datetime, 'gt' ),
+            'date_end': (range, datetime, 'lte' ),
 
-
-        ip_address = query.params_list(request, 'ip')
-        asn = utils.params_list(request,'asn')
-        median_rtt_lte = request.query_params.get('median_rtt_lte')
-        median_rtt_gte = request.query_params.get('median_rtt_gte')
-
-        filters = utils.filters_from_query_params(request.query_params, {
-            'date': (datetime,),
-            'date_start': (datetime, 'lt','lte', 'gt', 'gte'),
-            'date_end': (datetime, 'lt', 'lte', 'gt', 'gte'),
-
+            'ip': (str, 'contains'),
             'ips': ([str], ),
-            'ip':, (str, 'contains'),
 
-            'asns': ([int], ),
             'asn': (int, ),
+            'asns': ([int], ),
 
-
-            'median_rtt', (float, 'lt', 'lte', 'gt', 'gte')
+            'median_rtt': (float, 'lt', 'lte', 'gt', 'gte')
         })
 
         # Limiting
@@ -65,36 +60,9 @@ class IpMetricsViewSet(viewsets.ViewSet):
         limit = request.query_params.get('limit', None)
         end = int(limit) + start if limit else None
 
-        query_list = []
-
-        if created_at:
-            query_list.append(Q(created_at=created_at))
-
-        if date_day:
-            query_list.append(Q(created_at__day=date_day))
-
-        if date_month:
-            query_list.append(Q(created_at__month=date_month))
-
-        if date_year:
-            query_list.append(Q(created_at__year=date_year))
-
-        if ip_address:
-            query_list.append(Q(ip__address__in=ip_address))
-
-        if asn:
-            query_list.append(Q(ip__member__asn__number__in=asn))
-
-        if median_rtt_gte:
-            query_list.append(Q(median_rtt__gte=median_rtt_gte))
-
-        if median_rtt_lte:
-            query_list.append(Q(median_rtt__lte=median_rtt_lte))
-
         # Done. Combine all query parameters
-        if query_list:
-            entries = models.IpMetric.objects\
-                .filter(reduce(operator.and_, query_list))[start:end]
+        if filters:
+            entries = models.IpMetric.objects.filter(filters)[start:end]
         else:
             entries = models.IpMetric.objects.all()[start:end]
 

@@ -87,3 +87,9 @@ def test_from_query_params():
     assert str(f) == str(Q(**{'foo': 42.0}) & Q(**{'foos__in': [23, 42]}))
 
 
+def test_empty_params():
+    params = {}
+    schema = { 'foo': (int, ) }
+
+    f = filters.filters_from_query_params(params, schema)
+

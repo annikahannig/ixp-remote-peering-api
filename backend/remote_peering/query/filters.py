@@ -119,6 +119,9 @@ def filters_from_query_params(params, schema):
 
     """
     filtered_params = whitelist_params(params, schema)
+    if not filtered_params:
+        return None
+
     filters = reduce(operator.and_, [Q(**{param: value})
                                      for param, value
                                      in filtered_params.iteritems()])
