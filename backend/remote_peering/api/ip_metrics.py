@@ -42,17 +42,17 @@ class IpMetricsViewSet(viewsets.ViewSet):
 
         # Query Schema
         filters = query.filters_from_query_params(request.query_params, {
-            'date': (datetime, 'lt', 'lte', 'gt', 'gte'),
-            'date_start': (range, datetime, 'gt' ),
-            'date_end': (range, datetime, 'lte' ),
+            'date': ('created_at', datetime, 'lt', 'lte', 'gt', 'gte'),
+            'date_start': ('created_at', range, datetime, 'gt' ),
+            'date_end': ('created_at', range, datetime, 'lte' ),
 
-            'ip': (str, 'contains'),
-            'ips': ([str], ),
+            'ip': ('ip', str, 'contains'),
+            'ips': ('ip', [str], ),
 
-            'asn': (int, ),
-            'asns': ([int], ),
+            'asn': ('asn', int, ),
+            'asns': ('asns', [int], ),
 
-            'median_rtt': (float, 'lt', 'lte', 'gt', 'gte')
+            'median_rtt': ('median_rtt', float, 'lt', 'lte', 'gt', 'gte')
         })
 
         # Limiting
