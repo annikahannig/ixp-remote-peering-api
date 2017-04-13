@@ -1,7 +1,12 @@
 
 from __future__ import unicode_literals
 
-def _params_list(param, t):
+from datetime import datetime, time
+from django.utils import dateparse, timezone
+
+import functools
+
+def _params_list(t, param):
     """Returns a list of csv params cast to type t"""
     params = [t(p.strip()) for p
               in param.split(',')
@@ -9,13 +14,35 @@ def _params_list(param, t):
     return params
 
 
+def _parse_date(string):
+    """Return timezone aware datetime from input"""
+    if " " in string:
+        result = dateparse.parse_datetime(string)
+    else:
+        result = datetime.combine(
+            dateparse.parse_date(string),
+            time())
+
+    # Make tz aware
+    return timezone.utc.localize(result)
+
+
 def _query_type(param_schema):
     """Get type from param schema"""
-    return param_schema[0]
+    p_type = param_schema[0]
+    if p_type == datetime:
+        p_type = _parse_date
+    elif type(p_type) == list:
+        p_type = functools.partial(_params_list, p_type[0])
+    elif p_type == range:
+        p_type = _query_type(param_schema[1:])
+    return p_type
 
 
 def _query_modifiers(param_schema):
     """Get whitelisted modifiers"""
+    if param_schema[0] == range:
+        return param_schema[2:]
     return param_schema[1:]
 
 
@@ -40,14 +67,14 @@ def whitelist_params(params, schema):
             continue # modifier not whitelisted
 
         # Automodifier
+        s_type = schema[param][0] # Schema type
         q_type = _query_type(schema[param])
-        if type(q_type) == list:
+        if type(s_type) == list:
             modifier = 'in'
-            p_type = q_type[0]
-            q_value = _params_list(value, p_type)
-        else:
-            q_value = q_type(value)
+        elif s_type == range:
+            modifier = schema[param][2]
 
+        q_value = q_type(value)
 
         # Make query filter with param name and
         # whitelisted modifier:
