@@ -1,9 +1,12 @@
 
 from __future__ import unicode_literals
 
-from datetime import datetime, time
+from django.db.models import Q
 from django.utils import dateparse, timezone
 
+from datetime import datetime, time
+
+import operator
 import functools
 
 def _params_list(t, param):
@@ -98,11 +101,25 @@ def filters_from_query_params(params, schema):
     If the type is wrapped in an array an implicit __in is
     applied.
 
+
     Example:
 
         'names': ([str], ),
         'name': (str, 'icontains', 'contains'),
 
-    """
+    If the type starts with range, the parameter subsequent
+    to the desired type will be used as modifier:
 
-    return []
+    Example:
+
+        'date_start': (range, datetime, 'gte')
+
+    will result in a timezone aware datetime query:
+        'date_start__gte': datetime(...)
+
+    """
+    filtered_params = whitelist_params(params, schema)
+    filters = reduce(operator.and_, [Q(**{param: value})
+                                     for param, value
+                                     in filtered_params.iteritems()])
+    return filters
